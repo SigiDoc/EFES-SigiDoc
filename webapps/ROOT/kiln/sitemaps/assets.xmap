@@ -29,6 +29,12 @@
         <map:read mime-type="application/javascript"
                   src="../../assets/{1}.js" />
       </map:match>
+      
+      
+      <map:match pattern="**.min.js">
+        <map:read mime-type="application/javascript"
+          src="../../assets/{1}.min.js" />
+      </map:match>
 
       <map:match pattern="**.png">
         <map:read mime-type="image/png" src="../../assets/{1}.png" />

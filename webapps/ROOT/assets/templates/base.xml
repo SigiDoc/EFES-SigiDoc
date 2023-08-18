@@ -33,6 +33,8 @@
             <link href="{$kiln:assets-path}/styles/site.css" rel="stylesheet"
                   type="text/css" />
             <link href="{$kiln:assets-path}/images/favicon.png" rel="shortcut icon" type="image/png"/>
+            
+            <link  rel="stylesheet" href="{$kiln:assets-path}/relight/css/relight.css"/>
           </kiln:block>
           <kiln:block name="js">
             <script src="{$kiln:assets-path}/foundation/js/vendor/custom.modernizr.js">&#160;</script>
@@ -142,6 +144,13 @@
             <script src="{$kiln:assets-path}/foundation/js/vendor/jquery.js" />
             <script src="{$kiln:assets-path}/foundation/js/foundation.min.js" />
             <script>$(document).foundation();</script>
+            
+            <script src="{$kiln:assets-path}/scripts/jquery-ui.min.js"/>
+            <script src="{$kiln:assets-path}/relight/js/hammer.min.js"></script>
+            <script src="{$kiln:assets-path}/relight/js/relight-viewer.min.js"></script>
+            <script>
+              var Relight = new RelightViewer('.relight', { url: "/assets/relight-demo"}).resize('300','300');
+            </script>
           </kiln:block>
         </body>
       </kiln:block>

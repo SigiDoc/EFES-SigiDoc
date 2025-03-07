@@ -142,7 +142,7 @@
         | This is the main category. The empty name attribute indicates that
         | this rule will match all log events from all categories.
         +-->
-    <category log-level="INFO" name="">
+    <category log-level="WARN" name="">
       <log-target id-ref="main"/>
     </category>
 

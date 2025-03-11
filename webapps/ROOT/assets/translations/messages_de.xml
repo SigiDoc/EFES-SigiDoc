@@ -3,9 +3,9 @@
 <!-- LAST MODIFIED: 2024-05-27 -->
 
 <catalogue xml:lang="de" xml:space="preserve">
-    <message key="yes">oui</message>
-    <message key="no">non</message>
-    <message key="uncertain">uncertain</message>
+    <message key="yes">Ja</message>
+    <message key="no">Nein</message>
+    <message key="uncertain">Unsicher</message>
     <message key="artifact">Artefakt</message>
     <message key="type">Objekttyp</message>
     <message key="not-specified">Nicht angegeben</message>
@@ -27,8 +27,8 @@
     <message key="overstrike-orientation">Ausrichtung der Überprägung (Uhr)</message>
     <message key="channel-orientation">Ausrichtung des Fadenkanals (Uhr)</message>
     <message key="execution">Ausführung</message>
-    <message key="countermark">Contremarque</message>
-    <message key="epigraphy">Épigraphie</message>
+    <message key="countermark">Gegenstempel</message>
+    <message key="epigraphy">Epigraphie</message>
     <message key="shape">Form</message>
     <message key="condition">Erhaltungszustand</message>
     <message key="dating">Datierung</message>
@@ -40,13 +40,13 @@
     <message key="history">Geschichte</message>
     <message key="seal-category">Kategorie</message>
     <message key="issuer">Siegelinhaber</message>
-    <message key="issuer-milieu">Umgebung</message>
+    <message key="issuer-milieu">Milieu</message>
     <message key="place-origin">Herkunftsort</message>
     <message key="find-place">Fundort</message>
     <message key="find-circumstances">Fundumstände</message>
     <message key="find-date">Funddatum</message>
     <message key="modern-location">Moderner Aufbewahrungsort</message>
-    <message key="institution-repository">Einrichtung und Bestand</message>
+    <message key="institution-repository">Einrichtung und Bestand</message><!--TO BE DONE-->
     <message key="collection-inventory">Sammlung und Inventarnummer</message>
     <message key="acquisition">Erwerb</message>
     <message key="previous-locations">Frühere Aufbewahrungsorte</message>
@@ -87,16 +87,16 @@
     <message key="el">Griechisch</message>
     <message key="bg">Bulgarisch</message>
     <message key="menu-index-prosopography">Prosopographie</message>
-    <message key="menu-index-geography">Toponymen</message>
+    <message key="menu-index-geography">Toponyme</message>
     <message key="menu-index-dignities">Würden</message>
     <message key="menu-index-offices">Ämter</message>
     <message key="menu-index-officeCivil">Zivile Ämter</message>
-    <message key="menu-index-officeMilitary">Militärische Änter</message>
-    <message key="menu-index-officeEcclesiastical">Ekklesiastische Ämter</message>
+    <message key="menu-index-officeMilitary">Militärische Ämter</message>
+    <message key="menu-index-officeEcclesiastical">Kirchliche Ämter</message>
     <message key="menu-index-titles">Titel</message>
     <message key="menu-index-marianTerms">Beinamen der Muttergottes</message>
     <message key="menu-index-christTerms">Beinamen Christi</message>
-    <message key="menu-index-saintsTerms">Beinamen der Heilige</message>
+    <message key="menu-index-saintsTerms">Beinamen der Heiligen</message>
     <message key="menu-index-iconography">Ikonographie</message>
     <message key="menu-index-monogram">Monogramme</message>
     <message key="menu-index-lemma">Lemmata</message>
@@ -107,7 +107,7 @@
     <message key="bibliographic-concordance">Literatur</message>
     <message key="inscription-index-zip">Die SigiDoc-XML-Dateien der in der folgenden Liste aufgeführten Siegel-Editionen sind verfügbar in einem</message>
     <message key="zip"> komprimierten Ordner</message>
-    <message key="indices-type-prosopography-geography">Prosopographie und Toponymen</message>
+    <message key="indices-type-prosopography-geography">Prosopographie und Toponyme</message>
     <message key="indices-type-dignities-offices">Würden und Ämter</message>
     <message key="indices-type-religious-appellatives">Religiöse Begriffe</message>
     <message key="indices-type-iconography-monograms">Ikonographie und Monogramme</message>
@@ -130,14 +130,14 @@
     <message key="facet-personal_names">Vornamen</message>
     <message key="facet-family_names">Familiennamen</message>
     <message key="facet-milieu">Milieu</message>
-    <message key="facet-place_names">Toponymen</message>
+    <message key="facet-place_names">Toponyme</message>
     <message key="facet-dignities">Würden</message>
     <message key="facet-civil_offices">Zivile Ämter</message>
-    <message key="facet-ecclesiastical_offices">Ekklesiastische Ämter</message>
+    <message key="facet-ecclesiastical_offices">Kirchliche Ämter</message>
     <message key="facet-military_offices">Militärische Ämter</message>
     <message key="facet-marian_terms">Beinamen der Muttergottes</message>
     <message key="facet-christ-related_terms">Beinamen Christi</message>
-    <message key="facet-saints-related_terms">Beinamen der Heilige</message>
+    <message key="facet-saints-related_terms">Beinamen der Heiligen</message>
     <message key="facet-metrical">Metrische Inschriften</message>
     <message key="facet-monogram">Monogrammtyp</message>
     <message key="facet-legend_case">Kasus der Inschriften</message>

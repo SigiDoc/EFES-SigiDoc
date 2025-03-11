@@ -140,7 +140,7 @@
                 </span>
               </div>-->
               <p id="efes">Built on 
-                  <a href="https://epidoc.stoa.org/">EpiDoc</a> 
+                <a href="https://github.com/SigiDoc">SigiDoc</a> 
                   and delivered by
                   <a href="https://github.com/EpiDoc/EFES">EFES</a>.
               </p>

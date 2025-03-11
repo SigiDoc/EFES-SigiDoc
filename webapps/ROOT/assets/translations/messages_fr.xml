@@ -319,6 +319,11 @@
 <message key="undetermined">Indéterminé</message>
 
 <message key="hide-empty-fields">masquer les champs vides</message>
-<message key="show-empty-fields">affiche les champs vides</message>
+<message key="show-empty-fields">afficher les champs vides</message>
     <message key="export-as">Exporter en tant que</message>
+    
+        <message key="M">m</message>
+    <message key="E">eunuch</message>
+    <message key="F">female</message>
+    <message key="U">undetermind</message>
 </catalogue>

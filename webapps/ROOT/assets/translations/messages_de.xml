@@ -322,4 +322,8 @@
 <message key="hide-empty-fields">Leere Felder ausblenden</message>
 <message key="show-empty-fields">Leere Felder anzeigen</message>
     <message key="export-as">Exportieren als</message>
+        <message key="M">männlich</message>
+    <message key="E">eunuch</message>
+    <message key="F">weiblich</message>
+    <message key="U">unbestimmt</message>
 </catalogue>

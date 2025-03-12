@@ -1,14 +1,15 @@
 .openlime {
 	position: relative;
 	background-color: #000;
-	height: 100%;
+	height: 400px;
+	width: 400px;
 	touch-action: none; /* Remove default behavior of the user agent */
 }
 
 .openlime > canvas {
 	width: 100%; /* leave this at 100%, it's needed to align annotations correctly */
-	height: 100%;
-	overflow: hidden;
+    height: 100%;
+    overflow: hidden;
 	/* this is important, it would cause firefox flickering! */
 	padding: 0px;
 }

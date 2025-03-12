@@ -34,7 +34,11 @@
                   type="text/css" />
             <link href="{$kiln:assets-path}/images/favicon.png" rel="shortcut icon" type="image/png"/>
             <!-- relight rti viewer style -->
+            <!--
             <link rel="stylesheet" href="{$kiln:assets-path}/relight/css/relight.css"/>
+            -->
+            
+            <link rel="stylesheet" href="{$kiln:assets-path}/openlime/css/skin.css"/>
           </kiln:block>
           <kiln:block name="js">
             <script src="{$kiln:assets-path}/foundation/js/vendor/custom.modernizr.js">&#160;</script>
@@ -45,9 +49,13 @@
             <script src="{$kiln:assets-path}/foundation/js/vendor/jquery.js" />
             <script src="{$kiln:assets-path}/foundation/js/foundation.min.js" />
             <!-- Js scripts for relight rti viewer -->
+            
             <script src="{$kiln:assets-path}/scripts/jquery-ui.min.js"/>
+            <!--
             <script src="{$kiln:assets-path}/relight/js/hammer.min.js"/>
             <script src="{$kiln:assets-path}/relight/js/relight-viewer.min.js"/>
+            -->
+            <script src="{$kiln:assets-path}/openlime/js/openlime.js"/>
             <!-- <script src="{$kiln:assets-path}/scripts/attrchange.js"/> -->
           </kiln:block>
           <kiln:block name="head-extra"></kiln:block>

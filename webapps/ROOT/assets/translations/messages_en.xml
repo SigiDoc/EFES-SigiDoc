@@ -83,8 +83,8 @@
     <message key="it">Italian</message>
     <message key="el">Greek</message>
     <message key="bg">Bulgarian</message>
-    <message key="menu-index-prosopography">Prosopographical index</message>
-    <message key="menu-index-geography">Geographical index</message>
+    <message key="menu-index-prosopography">Persons</message>
+    <message key="menu-index-geography">Places</message>
     <message key="menu-index-dignities">Dignities</message>
     <message key="menu-index-offices">Offices</message>
     <message key="menu-index-officeCivil">Civil offices</message>

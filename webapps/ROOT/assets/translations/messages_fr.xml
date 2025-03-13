@@ -322,8 +322,9 @@
 <message key="show-empty-fields">afficher les champs vides</message>
     <message key="export-as">Exporter en tant que</message>
     
-        <message key="M">m</message>
-    <message key="E">eunuch</message>
-    <message key="F">female</message>
-    <message key="U">undetermind</message>
+        <message key="M">masculin</message>
+    <message key="E">eunuque</message>
+    <message key="F">féminin</message>
+    <message key="U">indéterminé</message>
+    <message key="no-facet">no facet</message>
 </catalogue>

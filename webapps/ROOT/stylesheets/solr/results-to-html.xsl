@@ -61,6 +61,7 @@
       <xsl:text>');</xsl:text>
     </xsl:variable>
     <section>
+      
       <p class="title" data-section-title="">
         <!--<a href="#">
           <xsl:attribute name="onclick"><xsl:value-of select="$toggle_facet_items"/></xsl:attribute>-->
@@ -74,6 +75,9 @@
       <div class="content" data-section-content="" id="{@name}" style="display:none;">
         <ul class="no-bullet">
           <xsl:apply-templates mode="search-results"/>
+          <xsl:if test="not(.//int)">
+            <i><i18n:text key="no-facet" /></i>
+          </xsl:if>
         </ul>
       </div>
     </section>

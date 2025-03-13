@@ -317,6 +317,13 @@
 <message key="understrike">Долен отпечатък</message>
 <message key="iconography-and-monogram">Иконография и монограм</message>
 <message key="undetermined">Неопределен</message>
-
+<message key="hide-empty-fields">скриване на празните полета</message>
+<message key="show-empty-fields">показване на празните полета</message>
+<message key="export-as">Експортиране като</message>
+<message key="M">мъжки</message>
+<message key="E">евнух</message>
+<message key="F">женски</message>
+<message key="U">неопределен</message>
+<message key="no-facet">no facet</message>
 </catalogue>
 

@@ -317,5 +317,14 @@
 <message key="understrike"/>
 <message key="iconography-and-monogram">Iconografia e monogramma</message>
 <message key="undetermined">Indeterminato</message>
+<message key="hide-empty-fields">nascondi i campi vuoti</message>
+<message key="show-empty-fields">mostra i campi vuoti</message>
+<message key="export-as">Esporta come</message>
+
+<message key="M">maschile</message>
+<message key="E">eunuco</message>
+<message key="F">femminile</message>
+<message key="U">indeterminato</message>
+<message key="no-facet">no facet</message>
 
 </catalogue>

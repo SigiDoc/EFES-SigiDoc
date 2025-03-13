@@ -55,7 +55,7 @@
               </xsl:attribute>
             </input>
 
-            <xsl:if test="$search-lemma">
+            <!--<xsl:if test="$search-lemma">
               <label>
                 <input name="df" type="checkbox" value="lemmatised_text">
                   <xsl:if test="$df_value = 'lemmatised_text'">
@@ -66,7 +66,7 @@
                   <xsl:text>Search lemmatised text</xsl:text>
                 </i18n:text>
               </label>
-            </xsl:if>
+            </xsl:if>-->
 
             <label>
               <p>

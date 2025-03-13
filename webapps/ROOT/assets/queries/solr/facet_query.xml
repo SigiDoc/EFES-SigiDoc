@@ -25,7 +25,7 @@
   <facet.field>metrical</facet.field>
   <facet.field>monogram</facet.field>
  <!-- <facet.field>legend_case</facet.field> -->
-  <facet.field>collection</facet.field>
+  <!--<facet.field>collection</facet.field>-->
   <!--<facet.field>iconography</facet.field>--> <!--MF deleted it in Nov 2024-->
   <facet.limit>-1</facet.limit>
   <facet.mincount>1</facet.mincount>

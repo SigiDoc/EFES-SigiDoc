@@ -79,15 +79,15 @@
     <message key="menu-search">Rechercher</message>
     <message key="menu-bibliography">Bibliographie</message>
     <message key="menu-admin">Admin</message>
-    <message key="menu-language">Langues</message>
+    <message key="menu-language"><img id="logo-lang" src="/assets/google-icons/translate.svg"/></message>
     <message key="en">Anglais</message>
     <message key="fr">Français</message>
     <message key="de">Allemand</message>
     <message key="it">Italien</message>
     <message key="el">Grec</message>
     <message key="bg">Bulgare</message>
-    <message key="menu-index-prosopography">Index prosopographique</message>
-    <message key="menu-index-geography">Index géographique</message>
+    <message key="menu-index-prosopography">Personnes</message>
+    <message key="menu-index-geography">Lieux</message>
     <message key="menu-index-dignities">Dignités</message>
     <message key="menu-index-offices">Fonctions</message>
     <message key="menu-index-officeCivil">Fonctions civiles</message>
@@ -106,7 +106,7 @@
     <message key="home-title">SigiDoc 1.0: un corpus modèle</message>
     <message key="bibliographic-concordance">Bibliographie</message>
     <message key="inscription-index-zip">Les fichiers SigiDoc XML des éditions de sceaux présentes dans la liste suivante sont disponibles dans une </message>
-    <message key="zip"> dossier compressé</message>
+    <message key="zip"> dossier ZIP</message>
     <message key="indices-type-prosopography-geography">Personnes et lieux</message>
     <message key="indices-type-dignities-offices">Dignités et fonctions</message>
     <message key="indices-type-religious-appellatives">Termes religieux</message>

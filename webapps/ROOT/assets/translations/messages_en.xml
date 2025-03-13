@@ -76,7 +76,7 @@
     <message key="menu-search">Search</message>
     <message key="menu-bibliography">Bibliography</message>
     <message key="menu-admin">Admin</message>
-    <message key="menu-language">Languages</message>
+    <message key="menu-language"><img id="logo-lang" src="/assets/google-icons/translate.svg"/></message>
     <message key="en">English</message>
     <message key="fr">French</message>
     <message key="de">German</message>
@@ -103,7 +103,7 @@
     <message key="home-title">SigiDoc 1.0: A Sample Corpus</message>
     <message key="bibliographic-concordance">Bibliography</message>
     <message key="inscription-index-zip">The SigiDoc XML files of the seal editions listed below are available in a </message>
-    <message key="zip"> compressed folder</message>
+    <message key="zip"> ZIP folder</message>
     <message key="indices-type-prosopography-geography">People and Places</message>
     <message key="indices-type-dignities-offices">Dignities and Offices</message>
     <message key="indices-type-religious-appellatives">Religious Terms</message>

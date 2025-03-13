@@ -31,8 +31,16 @@
       <div class="row">
         <div class="large-12 columns">
           <!--<p>There are some <a href="{kiln:url-for-match('local-indices-type-display', ($language, 'epidoc'), 0)}">indices of various facets of inscription data</a> available.</p>-->
-
-          <p><i18n:text i18n:key="inscription-index-zip">The source XML for all of the listed editions of seals are available in a</i18n:text> <a href="{kiln:url-for-match('local-epidoc-zip', ($language), 0)}"> <i18n:text i18n:key="zip">ZIP archive</i18n:text></a>.</p>
+      <span id="export">
+        <div id="logo-download"></div>
+        <p>
+          <i18n:text i18n:key="export-as">Export as a </i18n:text>
+          <a href="{kiln:url-for-match('local-epidoc-zip', ($language), 0)}">
+           <i18n:text i18n:key="zip">ZIP archive</i18n:text>
+          </a>
+        </p>
+      </span>
+          
 
           <xsl:apply-templates mode="text-index"
                                select="/aggregation/response" />

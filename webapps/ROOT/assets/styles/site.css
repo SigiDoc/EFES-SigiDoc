@@ -192,10 +192,11 @@ footer {
     gap: 1em;
     padding-top: 0.5em;
     flex-direction: column;
-    padding: 1.5em 5vw;
+    padding: 1.5em 5vw 0.5em 5vw;
     margin: 1em;
     line-height: 1em;
     margin-top: auto;
+    margin-bottom: 0px;
     border-top: 1px solid #efefef;
 }
 

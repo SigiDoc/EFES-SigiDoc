@@ -116,6 +116,24 @@ ul.index-instances {
     width: 100%;
 }
 
+#logo-download {
+    background: url("../google-icons/download_24dp_562C2C_FILL0_wght400_GRAD0_opsz24.svg") center no-repeat;
+    height: 24px;
+    width: 24px;
+}
+
+#logo-lang {
+    margin-top: 12px;
+    margin-bottom: 8px;
+    height: 24px;
+}
+
+#export {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
 .landing-img {
     margin-bottom: 20px;
 }

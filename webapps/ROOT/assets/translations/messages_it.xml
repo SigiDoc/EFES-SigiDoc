@@ -79,15 +79,15 @@
     <message key="menu-search">Ricerca</message>
     <message key="menu-bibliography">Bibliografia</message>
     <message key="menu-admin">Admin</message>
-    <message key="menu-language">Lingue</message>
+    <message key="menu-language"><img id="logo-lang" src="/assets/google-icons/translate.svg"/></message>
     <message key="en">Inglese</message>
     <message key="fr">Francese</message>
      <message key="de">Tedesco</message>
     <message key="it">Italiano</message>
     <message key="el">Greco</message>
     <message key="bg">Bulgaro</message>
-    <message key="menu-index-prosopography">Indice prosopografico</message>
-    <message key="menu-index-geography">Indice geografico</message>
+    <message key="menu-index-prosopography">Persone</message>
+    <message key="menu-index-geography">Luoghi</message>
     <message key="menu-index-dignities">Dignità</message>
     <message key="menu-index-offices">Funzioni</message>
     <message key="menu-index-officeCivil">Funzioni civili</message>
@@ -106,7 +106,7 @@
     <!--<message key="home-title">SigiDoc 1.0: un corpus modèle</message>-->
     <message key="bibliographic-concordance">Bibliografia</message>
     <message key="inscription-index-zip">I file SigiDoc-XML delle edizioni di sigilli indicate nell'elenco seguente sono disponibili in una</message>
-    <message key="zip"> cartella compressa</message>
+    <message key="zip"> cartella ZIP</message>
     <message key="indices-type-prosopography-geography">Persone e luoghi</message>
     <message key="indices-type-dignities-offices">Dignità e funzioni</message>
     <message key="indices-type-religious-appellatives">Termini religiosi</message>

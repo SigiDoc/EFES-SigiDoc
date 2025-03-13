@@ -79,7 +79,7 @@
     <message key="menu-search">Suche</message>
     <message key="menu-bibliography">Literatur</message>
     <message key="menu-admin">Admin</message>
-    <message key="menu-language">Sprachen</message>
+    <message key="menu-language"><img id="logo-lang" src="/assets/google-icons/translate.svg"/></message>
     <message key="en">Englisch</message>
     <message key="fr">Französisch</message>
     <message key="de">Deutsch</message>
@@ -106,7 +106,7 @@
     <!--<message key="home-title">SigiDoc 1.0: un corpus modèle</message>-->
     <message key="bibliographic-concordance">Literatur</message>
     <message key="inscription-index-zip">Die SigiDoc-XML-Dateien der in der folgenden Liste aufgeführten Siegel-Editionen sind verfügbar in einem</message>
-    <message key="zip"> komprimierten Ordner</message>
+    <message key="zip"> ZIP Ordner</message>
     <message key="indices-type-prosopography-geography">Prosopographie und Toponyme</message>
     <message key="indices-type-dignities-offices">Würden und Ämter</message>
     <message key="indices-type-religious-appellatives">Religiöse Begriffe</message>

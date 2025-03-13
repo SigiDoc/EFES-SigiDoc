@@ -31,8 +31,8 @@
     <item label="Monograms" match="local-index-display-html" params="epidoc monogram"
       i18n:key="menu-index-monogram"/>
     <!--Words and legend’s features-->
-    <item label="Lemmata" match="local-index-display-html" params="epidoc lemma"
-      i18n:key="menu-index-lemma"/>
+    <!--<item label="Lemmata" match="local-index-display-html" params="epidoc lemma"
+      i18n:key="menu-index-lemma"/>-->
     <!--
     <item label="Legends' cases" match="local-index-display-html" params="epidoc legendsCases"
       i18n:key="menu-index-legendsCases"/>

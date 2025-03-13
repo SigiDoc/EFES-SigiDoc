@@ -87,6 +87,8 @@ footer {
 
 ul.index-instances {
     font-weight: normal;
+    margin-bottom: auto;
+    margin-top: auto;
 }
 
 .index-instance-file {
@@ -101,20 +103,21 @@ ul.index-instances {
     font-weight: normal;
 }
 
+#indices-list {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) ;
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+}
+
 #site-title {
-    overflow: hidden;
-    background: url("../images/seal.jpg") center no-repeat;
-    position: inherit;
-    background-size: 1440px 300px;
-    font-size: 45px;
-    color: #562c2c;
-    height: 120px;
-    text-align: right;
-    margin-top: -1px;
-    margin-bottom: -1px;
-    padding-right: 10px;
-    padding-left: 10px;
+    background: url("../images/seal.png") center no-repeat;
+    height: 220px;
     width: 100%;
+}
+
+.landing-img {
+    margin-bottom: 20px;
 }
 
 nav.top-bar,
@@ -126,7 +129,7 @@ nav.top-bar ul.left * {
 }
 
 nav.top-bar {
-    margin: 0 0px 40px 0px;
+    margin: 0 0px 20px 0px;
 }
 
 .top-bar-section {
@@ -177,7 +180,7 @@ body {
     color: #333;
     background-color: white;
     display: block;
-    padding: 3px 1px 3px 3px;
+    /* padding: 3px 1px 3px 3px; */
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -193,6 +196,7 @@ body {
 }
 .active, .result-headline:hover {
   background-color: #ccc;
+  cursor: pointer;
 }
 
 .result-details {
@@ -214,6 +218,21 @@ body {
 .result-headline{
     display: flex;
     justify-content: space-between;
+    padding: 5px
+}
+
+.result-headline p {
+    text-align: left;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-weight: bold;
+}
+
+.result-headline a {
+    margin-top: auto;
+    margin-bottom: auto;
+    text-decoration: underline;
+    font-size: medium;
 }
 
 .collection-headline{

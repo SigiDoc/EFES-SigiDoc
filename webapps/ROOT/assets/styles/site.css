@@ -1,11 +1,9 @@
 /* Improve fonts */
 :root {
-    --base-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, 
-Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", 
-"athenaruby";
-    --heading-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
-Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", 
-"Segoe UI Symbol", "athenaruby";
+    --base-font: -apple-system, Roboto, Helvetica, Calibri, serif, "Apple Color Emoji",
+     "Segoe UI Emoji", "Segoe UI Symbol", "athenaruby";
+    --heading-font: -apple-system, Roboto, Helvetica, Calibri, serif, "Apple Color Emoji",
+     "Segoe UI Emoji", "Segoe UI Symbol", "athenaruby";
 
     --fs-base: 16px;
     --base-line-height: 1.666;
@@ -18,6 +16,10 @@ Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     --fs-xlarge: calc(var(--fs-large)* var(--fraction));
     --fs-xxlarge: calc(var(--fs-xlarge)* var(--fraction));
     --fs-huge: calc(var(--fs-xxlarge)* var(--fraction));
+}
+
+body {
+    padding: 0px;
 }
 
 body,
@@ -42,6 +44,36 @@ table,
 table thead,
 table tbody {
     font-size: var(--fs-base);
+}
+
+table {
+    border: none;
+    border-collapse: collapse;
+
+}
+
+thead th{
+    background-color: white;
+    border-bottom: #562c2c60 1px solid;
+    width: fit-content;
+    padding: 0px 20px 0px 10px !important;
+}
+
+thead tr th {
+    font-size: 16px !important;
+}
+
+tbody tr {
+    background-color: white !important;
+    border-bottom: #562c2c30 solid 0.5px;
+}
+
+tbody tr td {
+    font-size: 16px;
+}
+
+tr:hover {
+    background-color: #562c2c15 !important;
 }
 
 h1,
@@ -186,11 +218,13 @@ footer {
 /* Indices list */
 .indices-list {
     list-style: inside none;
-    margin-top: 1em;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .indices-list li {
-    margin-bottom: 0.5em;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 /* Seal page */

@@ -28,11 +28,11 @@ table.tablesorter thead tr .headerSortUp {
   cursor: pointer;
 }
 
-table.tablesorter thead tr .headerSortDown,
+/* table.tablesorter thead tr .headerSortDown,
 table.tablesorter thead tr .headerSortUp {
-  background-color: #8dbdd8;
-}
+  background-color: #562c2c05;
+} */
 
-tr:hover {
+/* tr:hover {
   background-color: #f6f1f1;
-}
+} */

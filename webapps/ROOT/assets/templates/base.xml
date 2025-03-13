@@ -64,11 +64,11 @@
       <kiln:block name="body">
         <body>
           <kiln:block name="navigation">
-            <div class="text-left">
+            <!-- <div class="text-left">
               <h1 id="site-title">
                 <a href="/">SigiDoc</a>
               </h1>
-            </div>
+            </div> -->
             <nav class="top-bar">
               <kiln:block name="main-navigation">
                 <ul class="title-area">

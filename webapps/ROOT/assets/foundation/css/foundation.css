@@ -1589,7 +1589,7 @@ label {
 
 /* Separate prefix and postfix styles when on span or label so buttons keep their own */
 span.prefix, label.prefix {
-  background: #f2f2f2;
+  background: white;
   border-color: #d9d9d9;
   border-right: none;
   color: #333333; }
@@ -1604,7 +1604,7 @@ span.prefix, label.prefix {
     border-top-left-radius: 3px; }
 
 span.postfix, label.postfix {
-  background: #f2f2f2;
+  background: white;
   border-color: #cccccc;
   border-left: none;
   color: #333333; }
@@ -4125,7 +4125,7 @@ ul.pagination {
   border-color: #d9d9d9;
   margin-bottom: 1.25em;
   padding: 1.25em;
-  background: #f2f2f2; }
+  background: white; }
   .panel > :first-child {
     margin-top: 0; }
   .panel > :last-child {

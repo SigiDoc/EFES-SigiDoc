@@ -117,9 +117,8 @@ ul.index-instances {
 }
 
 #logo-download {
-    background: url("../google-icons/download_24dp_562C2C_FILL0_wght400_GRAD0_opsz24.svg") center no-repeat;
-    height: 24px;
-    width: 24px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 #logo-lang {

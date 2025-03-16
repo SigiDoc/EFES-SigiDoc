@@ -95,9 +95,18 @@
       </xsl:call-template>
     </xsl:variable>
     <xsl:variable name="end-year">
-      <xsl:call-template name="get-year-from-date">
-        <xsl:with-param name="date" select="@notAfter" />
-      </xsl:call-template>
+      <xsl:choose>
+        <xsl:when test="@notAfter">
+          <xsl:call-template name="get-year-from-date">
+            <xsl:with-param name="date" select="@notAfter" />
+          </xsl:call-template>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:call-template name="get-year-from-date">
+            <xsl:with-param name="date" select="@notBefore"/>
+          </xsl:call-template>
+        </xsl:otherwise>
+      </xsl:choose>
     </xsl:variable>
     <xsl:for-each select="($start-year to $end-year)">
       <field name="origin_date">

@@ -75,6 +75,10 @@
 */
 }
 
+#diplomatic .textpart {
+  text-align: center;
+}
+
 .textpartnumber {
   padding-right: 0.2em;
   position: absolute;

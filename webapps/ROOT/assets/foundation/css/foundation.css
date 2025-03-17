@@ -2406,7 +2406,7 @@ label.error {
     border-top: none; }
 
 [data-section='tabs'], .section-container.tabs {
-  width: 100%;
+  width: 50%;
   position: relative;
   display: block;
   margin-bottom: 1.25em; }
@@ -4101,19 +4101,20 @@ ul.pagination {
     ul.pagination li.unavailable:hover a, ul.pagination li.unavailable a:focus {
       background: transparent; }
     ul.pagination li.current a {
-      background: #2ba6cb;
+      background: #562c2c;
       color: white;
       font-weight: bold;
       cursor: default; }
       ul.pagination li.current a:hover, ul.pagination li.current a:focus {
-        background: #2ba6cb; }
+        background: #562c2c; }
   ul.pagination li {
     float: left;
     display: block; }
 
 /* Pagination centred wrapper */
 .pagination-centered {
-  text-align: center; }
+  text-align: center;
+  margin-top: 20px !important; }
   .pagination-centered ul.pagination li {
     float: none;
     display: inline-block; }

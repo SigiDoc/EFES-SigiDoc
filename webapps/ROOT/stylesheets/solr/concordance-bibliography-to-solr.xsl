@@ -9,7 +9,7 @@
   
   <xsl:template match="/">
     <add>
-      <xsl:for-each-group select="//tei:body//tei:div//tei:bibl/tei:ptr" group-by="@target">
+      <xsl:for-each-group select="//tei:body//tei:div//tei:bibl/tei:ptr[@target != '']" group-by="@target">
         <xsl:variable name="target" select="@target" />
         <xsl:for-each-group select="current-group()" group-by="../tei:citedRange">
           <doc>
@@ -20,10 +20,7 @@
               <xsl:value-of select="$file-path" />
             </field>
             <field name="concordance_bibliography_ref">
-              <xsl:choose>
-                <xsl:when test="contains($target, '#')"><xsl:value-of select="substring-after($target, '#')" /></xsl:when>
-                <xsl:otherwise><xsl:value-of select="$target" /></xsl:otherwise>
-              </xsl:choose>
+                <xsl:value-of select="replace($target, '#', '')" />
             </field>
             <field name="concordance_bibliography_cited_range">
               <xsl:value-of select="../tei:citedRange" />

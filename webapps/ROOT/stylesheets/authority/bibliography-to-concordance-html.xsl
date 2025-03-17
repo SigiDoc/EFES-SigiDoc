@@ -25,11 +25,13 @@
   
   <xsl:template match="doc" mode="bibl-list">  
     <xsl:variable name="bibl-id" select="str[@name='concordance_bibliography_ref']" />
+    <xsl:if test="id($bibl-id)">
     <li>
       <a href="{kiln:url-for-match('local-concordance-bibliography-item', ($language, $bibl-id), 0)}">
         <xsl:apply-templates mode="short-citation" select="id($bibl-id)" />
       </a>: <xsl:apply-templates mode="full-citation" select="id($bibl-id)" />
     </li>
+    </xsl:if>
   </xsl:template>
 
   <xsl:template match="str[@name='concordance_bibliography_cited_range']">
@@ -57,15 +59,6 @@
 
   <xsl:template match="tei:bibl[@xml:id]" mode="short-citation">
     <strong><xsl:value-of select="tei:bibl[@type='abbrev']"/></strong>
-    <!--<xsl:choose>
-      <xsl:when test="tei:editor">
-        <xsl:value-of select="tei:editor[1]" />
-      </xsl:when>
-      <xsl:otherwise>        <xsl:value-of select="tei:author[1]" />
-      </xsl:otherwise>
-    </xsl:choose>
-    <xsl:text> </xsl:text>
-    <xsl:value-of select=".//tei:date[1]" />-->
   </xsl:template>
 
   <xsl:template match="tei:bibl[@type='abbrev']">

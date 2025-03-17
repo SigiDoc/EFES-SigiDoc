@@ -162,6 +162,7 @@ ul.pagination {
     height: auto;
     margin: 0;
     margin-bottom: 1em;
+    justify-content: center;
 }
 
 ul.pagination li {

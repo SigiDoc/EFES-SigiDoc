@@ -79,6 +79,16 @@
   text-align: center;
 }
 
+.RTIedition {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#editionSpan {
+  width: 50%;
+}
+
 .textpartnumber {
   padding-right: 0.2em;
   position: absolute;

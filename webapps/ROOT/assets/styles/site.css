@@ -149,10 +149,17 @@ h6 {
 
 /* Export bar */
 .export-seal {
-    margin-top: 2em;
+    /* margin-top: 2em; */
     color: #000;
     font-size: var(--fs-base);
     font-weight: 400;
+}
+
+.export-hide-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
 }
 
 /* Pagination */
@@ -364,9 +371,17 @@ dl.iospe dd,
 }
 
 .hide-switch{
-    margin-top: 2em;
+    /* margin-top: 2em; */
     font-size: var(--fs-base);
     font-weight: 400;
+    background-color: #562c2c;
+    color: white !important;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.hide-switch:hover {
+    background-color: #555555;
 }
 
 .hidden{

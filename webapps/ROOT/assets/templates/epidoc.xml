@@ -52,14 +52,16 @@
         })
         
       </script>
+      <span class="export-hide-flex">
+      <a class="hide-switch hidden"><i18n:text i18n:key="hide-empty-fields"/></a>
+      <a class="hide-switch "><i18n:text i18n:key="show-empty-fields"/></a>
       <div class="export-seal">
         <i18n:text i18n:key="export-as"/>
         <a href="{kiln:url-for-match('local-epidoc-display-xml', ($language, $filename), 0)}"> XML</a>
         |
         <a href="javascript:window.print()">PDF</a>
       </div>
-      <a class="hide-switch hidden"><i18n:text i18n:key="hide-empty-fields"/></a>
-      <a class="hide-switch "><i18n:text i18n:key="show-empty-fields"/></a>
+      </span>
       <script>
         $(document).ready(function(){
         var empty = $("dd:contains("+"―"+")")

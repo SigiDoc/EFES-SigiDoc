@@ -97,7 +97,7 @@
 
       <!--Religious appellatives-->
 
-      <div xml:id="marianTerms">
+      <!--<div xml:id="marianTerms">
         <head n="3">Marian terms</head>
 
         <div type="headings">
@@ -109,9 +109,9 @@
         </div>
 
         
-      </div>
+      </div>-->
 
-      <div xml:id="christTerms">
+      <!--<div xml:id="christTerms">
         <head n="3">Christ-related terms</head>
 
         <div type="headings">
@@ -123,9 +123,9 @@
         </div>
 
         
-      </div>
+      </div>-->
 
-      <div xml:id="saintsTerms">
+      <!--<div xml:id="saintsTerms">
         <head n="3">Saints-related terms</head>
 
         <div type="headings">
@@ -137,11 +137,11 @@
         </div>
 
         
-      </div>
+      </div>-->
 
       <!--Iconography and monograms-->
 
-      <div xml:id="iconography">
+      <!--<div xml:id="iconography">
         <head n="4">Iconography</head>
 
         <div type="headings">
@@ -152,9 +152,9 @@
         </div>
 
         
-      </div>
+      </div>-->
 
-      <div xml:id="monogram">
+      <!--<div xml:id="monogram">
         <head n="4">Monograms</head>
 
         <div type="headings">
@@ -166,7 +166,7 @@
         </div>
 
         
-      </div>
+      </div>-->
 
       <!--Words and legend’s features-->
 
@@ -199,7 +199,7 @@
       </div>
       -->
 
-      <div xml:id="metrical">
+      <!--<div xml:id="metrical">
         <head n="5">Metrical legends</head>
 
         <div type="headings">
@@ -211,7 +211,7 @@
         </div>
 
         
-      </div>
+      </div>-->
 
       <div xml:id="invocation">
         <head n="5">Invocations</head>

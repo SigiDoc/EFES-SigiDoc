@@ -311,6 +311,12 @@
     </field>
   </xsl:template>
   
+  <xsl:template match="//tei:msDesc/tei:msIdentifier/tei:idno[@type='inv-nr-current']" mode="facet_inv">
+    <field name="inv">
+      <xsl:value-of select="."/>
+    </field>
+  </xsl:template>
+  
   <!--
   <xsl:template match="//tei:collection//tei:rs[@xml:lang='en']" mode="facet_collection">
     <field name="origdate">
@@ -350,7 +356,7 @@
     <xsl:call-template name="field_language"/>
     <xsl:call-template name="field_translation"/>
     <xsl:call-template name="field_origDate"/>
-    
+    <xsl:call-template name="field_inv"/>
   </xsl:template>
   
   <xsl:template name="field_sigidoc_id_number">
@@ -461,6 +467,11 @@
   <xsl:template name="field_origDate">
     <xsl:apply-templates mode="facet_origDate"
       select="//tei:origDate//tei:seg[@xml:lang='en']"/>
+  </xsl:template>
+  
+  <xsl:template name="field_inv">
+    <xsl:apply-templates mode="facet_inv"
+      select="//tei:msDesc/tei:msIdentifier/tei:idno[@type='inv-nr-current']"/>
   </xsl:template>
   
   

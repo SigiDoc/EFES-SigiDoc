@@ -26,9 +26,9 @@
       <main>
         <div class="row">
           <div class="large-12 columns">
-          
+          <img class="landing-img" src="/assets/images/seal.png"/>
             <div class="panel radius">
-              <img class="landing-img" src="/assets/images/seal.png"/>
+              
               <!-- <div class="landing-img" id="site-title"></div> -->
               <p>Seals are the only remnants of the written documents used for daily administration
                 and private correspondence from the 4th to the 15th C. in the Byzantine Empire –

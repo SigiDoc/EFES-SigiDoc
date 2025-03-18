@@ -27,8 +27,18 @@
         <div class="large-12 columns" >
           <xsl:apply-templates select="/aggregation/tei:TEI/tei:text/tei:front" />
           <!-- Display the list of indices. -->
-          <div id="indices-list">
-          <span>
+          <ul>
+            <xsl:for-each select="/aggregation/tei:TEI/tei:text/tei:body/tei:div">
+              <li>
+                <a href="{kiln:url-for-match('local-index-display-html', ($language, $index_type, @xml:id), 0)}">
+                  <xsl:value-of select="tei:head" />
+                </a>
+              </li>
+            </xsl:for-each>
+          </ul>
+          
+          <!--<div id="indices-list">
+          <!-\-<span>
           <h3 class="iospe">
             <i18n:text i18n:key="indices-type-prosopography-geography">Prosopography and geography</i18n:text>
           </h3>
@@ -41,9 +51,9 @@
               </li>
             </xsl:for-each>
           </ul>
-          </span>
+          </span>-\->
           
-          <span>
+          <!-\-<span>
           <h3 class="iospe">
             <i18n:text i18n:key="indices-type-dignities-offices">Dignities and offices</i18n:text>
           </h3>
@@ -56,9 +66,9 @@
               </li>
             </xsl:for-each>
           </ul>
-          </span>
+          </span>-\->
           
-          <span>
+          <!-\-<span>
           <h3 class="iospe">
             <i18n:text i18n:key="indices-type-religious-appellatives">Religious appellatives</i18n:text>
           </h3>
@@ -71,9 +81,9 @@
               </li>
             </xsl:for-each>
           </ul>
-          </span>
+          </span>-\->
           
-          <span>
+          <!-\-<span>
           <h3 class="iospe">
             <i18n:text i18n:key="indices-type-iconography-monograms">Iconography and monograms</i18n:text>
           </h3>
@@ -86,9 +96,9 @@
               </li>
             </xsl:for-each>
           </ul>
-          </span>
+          </span>-\->
           
-          <span>
+          <!-\-<span>
           <h3 class="iospe">
             <i18n:text i18n:key="indices-type-other-features">Other features</i18n:text>
           </h3>
@@ -101,8 +111,8 @@
               </li>
             </xsl:for-each>
           </ul>
-          </span>
-          </div>
+          </span>-\->
+          </div>-->
           
           
         </div>

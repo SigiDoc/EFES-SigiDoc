@@ -152,7 +152,14 @@
     <div class="result">
       <div class="result-headline">
         <p style="width: 85%">
-          <xsl:value-of select="arr[@name = 'document_title']/str[1]"/>
+          <xsl:choose>
+            <xsl:when test="arr[@name = 'document_title']/str[contains(.,concat($language,'|'))]">
+              <xsl:value-of select="substring-after(arr[@name = 'document_title']/str[contains(.,concat($language,'|'))],'|')"/>
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:value-of select="substring-after(arr[@name = 'document_title']/str[contains(.,'en|')],'|')"/>
+            </xsl:otherwise>
+          </xsl:choose>
         </p>
         <a href="{kiln:url-for-match('local-epidoc-display-html', ($language, $short-filepath), 0)}"
           > view seal</a>

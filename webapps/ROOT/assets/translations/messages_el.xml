@@ -319,10 +319,10 @@
 <message key="hide-empty-fields">απόκρυψη κενών πεδίων</message>
 <message key="show-empty-fields">εμφάνιση κενών πεδίων</message>
 <message key="export-as">Εξαγωγή ως</message>
-<message key="M">αρσενικό</message>
-<message key="E">ευνούχος</message>
-<message key="F">θηλυκό</message>
-<message key="U">απροσδιόριστο</message>
+<message key="M">Αρσενικό</message>
+<message key="E">Ευνούχος</message>
+<message key="F">Θηλυκό</message>
+<message key="U">Απροσδιόριστο</message>
 <message key="no-facet">no facet</message>
 
 

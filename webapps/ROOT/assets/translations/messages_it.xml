@@ -321,10 +321,10 @@
 <message key="show-empty-fields">mostra i campi vuoti</message>
 <message key="export-as">Esporta come</message>
 
-<message key="M">maschile</message>
-<message key="E">eunuco</message>
-<message key="F">femminile</message>
-<message key="U">indeterminato</message>
+<message key="M">Maschile</message>
+<message key="E">Eunuco</message>
+<message key="F">Femminile</message>
+<message key="U">Indeterminato</message>
 <message key="no-facet">no facet</message>
 
 </catalogue>

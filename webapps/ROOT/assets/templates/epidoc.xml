@@ -34,7 +34,7 @@
 
     <kiln:block name="page-heading">
       <xsl:copy-of select="$title" />
-      <button id="myBtn" title="Go to top">Scroll to Top</button> 
+      <button id="myBtn" title="Go to top"><img src="/assets/google-icons/vertical_align_top_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg"/></button> 
       <script>
         $(document).ready(function(){
           $(window).bind('scroll', function(){
@@ -56,6 +56,7 @@
       <a class="hide-switch hidden"><i18n:text i18n:key="hide-empty-fields"/></a>
       <a class="hide-switch "><i18n:text i18n:key="show-empty-fields"/></a>
       <div class="export-seal">
+      <img src="/assets/google-icons/download_24dp_562C2C_FILL0_wght400_GRAD0_opsz24.svg"/>
         <i18n:text i18n:key="export-as"/>
         <a href="{kiln:url-for-match('local-epidoc-display-xml', ($language, $filename), 0)}"> XML</a>
         |

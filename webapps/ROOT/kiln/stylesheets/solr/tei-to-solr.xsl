@@ -49,7 +49,7 @@
 
   <xsl:template match="tei:fileDesc/tei:titleStmt/tei:title" mode="document-metadata">
     <field name="document_title">
-      <xsl:value-of select="normalize-space(.)" />
+      <xsl:value-of select="concat(./@xml:lang,'|',normalize-space(.))" /> 
     </field>
   </xsl:template>
 

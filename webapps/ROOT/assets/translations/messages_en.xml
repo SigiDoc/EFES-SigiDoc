@@ -319,9 +319,9 @@
 <message key="hide-empty-fields">hide empty fields</message>
     <message key="show-empty-fields">show empty fields</message>
     <message key="export-as">export as</message>
-    <message key="M">male</message>
-    <message key="E">eunuch</message>
-    <message key="F">female</message>
-    <message key="U">undetermind</message>
+    <message key="M">Male</message>
+    <message key="E">Eunuch</message>
+    <message key="F">Female</message>
+    <message key="U">Undetermind</message>
     <message key="no-facet">no facet</message>
 </catalogue>

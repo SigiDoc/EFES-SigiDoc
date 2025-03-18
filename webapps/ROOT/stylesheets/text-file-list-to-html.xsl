@@ -38,15 +38,28 @@
 
   <xsl:template match="result/doc" mode="text-index">
     <tr>
-      <xsl:apply-templates mode="text-index" select="str[@name='file_path']" />
+      
+      <!--<xsl:apply-templates mode="text-index" select="str[@name='file_path']" /> -->
       <!--<xsl:apply-templates mode="text-index" select="str[@name='document_id']" />-->
+      <xsl:apply-templates mode="text-index" select="str[@name='inv']"/>
       <xsl:apply-templates mode="text-index" select="arr[@name='document_title']" />
       <xsl:apply-templates mode="text-index" select="arr[@name='author']" />
       <!--<xsl:apply-templates mode="text-index" select="arr[@name='editor']" />-->
       <xsl:apply-templates mode="text-index" select="str[@name='publication_date']" />
     </tr>
   </xsl:template>
+  
+  <xsl:template match="str[@name='inv']" mode="text-index">
 
+    <xsl:variable name="filename" select="substring-after(./preceding-sibling::str[@name='file_path'],'/')" />
+    <xsl:variable name="collectionname" select="./preceding-sibling::arr[@name='collection']"/>
+    <td>
+      <a href="{kiln:url-for-match($match_id, ($language, $filename), 0)}">
+        <xsl:value-of select="concat($collectionname,'-', .)"/>
+      </a>
+    </td>
+  </xsl:template>
+<!--
   <xsl:template match="str[@name='file_path']" mode="text-index">
     <xsl:variable name="filename" select="substring-after(., '/')" />
     <td>
@@ -55,17 +68,24 @@
       </a>
     </td>
   </xsl:template>
-
+-->
   <xsl:template match="str[@name='document_id']" mode="text-index">
     <td><xsl:value-of select="." /></td>
   </xsl:template>
 
   <xsl:template match="arr[@name='document_title']" mode="text-index">
-    <td><xsl:value-of select="string-join(str, '; ')" /></td>
+    <td>
+      <xsl:choose>
+        <xsl:when test="./str[contains(.,concat($language, '|'))]">
+          <xsl:value-of select="substring-after(./str[contains(.,concat($language, '|'))],'|')" />
+        </xsl:when>
+        <xsl:otherwise><xsl:value-of select="substring-after(./str[contains(.,'en|')],'|')" /></xsl:otherwise>
+      </xsl:choose></td>
   </xsl:template>
 
   <xsl:template match="arr[@name='author']" mode="text-index">
-    <td><xsl:value-of select="string-join(str, '; ')" /></td>
+    <td>
+      <xsl:value-of select="string-join(str, '; ')" /></td>
   </xsl:template>
 
   <xsl:template match="arr[@name='editor']" mode="text-index">

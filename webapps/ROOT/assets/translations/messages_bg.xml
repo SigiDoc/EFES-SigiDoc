@@ -320,10 +320,10 @@
 <message key="hide-empty-fields">скриване на празните полета</message>
 <message key="show-empty-fields">показване на празните полета</message>
 <message key="export-as">Експортиране като</message>
-<message key="M">мъжки</message>
-<message key="E">евнух</message>
-<message key="F">женски</message>
-<message key="U">неопределен</message>
+<message key="M">Мъжки</message>
+<message key="E">Евнух</message>
+<message key="F">Женски</message>
+<message key="U">Неопределен</message>
 <message key="no-facet">no facet</message>
 </catalogue>
 

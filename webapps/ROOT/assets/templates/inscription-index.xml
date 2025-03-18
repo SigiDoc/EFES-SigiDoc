@@ -40,8 +40,6 @@
           </a>
         </p>
       </span>
-          
-
           <xsl:apply-templates mode="text-index"
                                select="/aggregation/response" />
         </div>

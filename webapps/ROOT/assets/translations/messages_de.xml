@@ -189,7 +189,7 @@
 <message key="corporate">Korporativ</message>
 <message key="undetermined">Unbestimmt</message>
 <message key="seal">Siegel</message>
-<message key="weight">Gewicht</message>
+<!-- <message key="weight">Gewicht</message> -->
 <message key="bread-stamp">Brotstempel</message>
 <message key="original-impression">Origineller Siegelabdruck</message>
 <message key="modern-impression">Moderner Siegelabdruck</message>
@@ -269,7 +269,7 @@
 <message key="corporate">Korporativ</message>
 <message key="undetermined">Unbestimmt</message>
 <message key="seal">Siegel</message>
-<message key="weight">Gewicht</message>
+<!-- <message key="weight">Gewicht</message> -->
 <message key="bread-stamp">Brotstempel</message>
 <message key="original-impression">Origineller Siegelabdruck</message>
 <message key="modern-impression">Moderner Siegelabdruck</message>

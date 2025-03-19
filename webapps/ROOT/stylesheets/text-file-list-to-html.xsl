@@ -9,7 +9,7 @@
         <tr>
           <!-- Let us assume that all texts have a filename, ID, and
                title. -->
-          <th>Filename</th>
+          <th>Seal</th>
           <!--<th>ID</th>-->
           <th>Title</th>
           <xsl:if test="result/doc/arr[@name='author']/str">

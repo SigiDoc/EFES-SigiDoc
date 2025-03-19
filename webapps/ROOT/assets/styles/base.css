@@ -142,6 +142,39 @@ ul.index-instances {
     margin-bottom: 20px;
 }
 
+.landing-page-container {
+    display: grid;
+    grid-template-columns:  repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.landing-panel {
+    border: 1px #562c2c solid;
+    padding: 5px;
+    text-align: center !important;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+.landing-panel:hover {
+    background-color: #55555525;
+}
+
+.landing-panel img {
+    width: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.landing-panel p {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 nav.top-bar,
 nav.top-bar ul.right li,
 nav.top-bar ul.left * {

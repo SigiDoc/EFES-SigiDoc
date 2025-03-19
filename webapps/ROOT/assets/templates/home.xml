@@ -26,7 +26,39 @@
       <main>
         <div class="row">
           <div class="large-12 columns">
-          <img class="landing-img" src="/assets/images/seal.png"/>
+          <!-- <img class="landing-img" src="/assets/images/seal.png"/> -->
+          <div class="landing-page-container">
+            <div class="landing-panel">
+            <img src="/assets/google-icons/download_24dp_562C2C_FILL0_wght400_GRAD0_opsz24.svg"/>
+            <h3> About </h3>
+            <p>Learn more about this portal</p>
+            </div>
+            <div class="landing-panel">
+            <img src="/assets/google-icons/download_24dp_562C2C_FILL0_wght400_GRAD0_opsz24.svg"/>
+            <h3> Search </h3>
+            <p>Search the collections</p>
+            </div>
+            <div class="landing-panel">
+            <img src="/assets/google-icons/download_24dp_562C2C_FILL0_wght400_GRAD0_opsz24.svg"/>
+            <h3> Collections </h3>
+            <p>See all collections</p>
+            </div>
+            <div class="landing-panel">
+            <img src="/assets/google-icons/download_24dp_562C2C_FILL0_wght400_GRAD0_opsz24.svg"/>
+            <h3> Guidelines </h3>
+            <p>More informations on how to encode</p>
+            </div>
+            <div class="landing-panel">
+            <img src="/assets/google-icons/download_24dp_562C2C_FILL0_wght400_GRAD0_opsz24.svg"/>
+            <h3> Team </h3>
+            <p>Get to know our team</p>
+            </div>
+            <div class="landing-panel">
+            <img src="/assets/google-icons/download_24dp_562C2C_FILL0_wght400_GRAD0_opsz24.svg"/>
+            <h3> 2048 </h3>
+            <p>Objects in all collections</p>
+            </div>
+          </div>
             <div class="panel radius">
               
               <!-- <div class="landing-img" id="site-title"></div> -->

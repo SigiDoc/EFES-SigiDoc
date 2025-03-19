@@ -188,7 +188,7 @@
 <message key="corporate">Институционална (сфера на дейност)</message>
 <message key="undetermined">Неопределена</message>
 <message key="seal">Печат</message>
-<message key="weight">Тежест</message>
+<!-- <message key="weight">Тежест</message> -->
 <message key="bread-stamp">Печат за хляб</message>
 <message key="original-impression">Оригинален отпечатък</message>
 <message key="modern-impression">Съвременен отпечатък</message>
@@ -267,7 +267,7 @@
 <message key="corporate">Институционална (сфера на дейност)</message>
 <message key="undetermined">Неопределена</message>
 <message key="seal">Печат</message>
-<message key="weight">Тежест</message>
+<!-- <message key="weight">Тежест</message> -->
 <message key="bread-stamp">Печат за хляб</message>
 <message key="original-impression">Оригинален отпечатък</message>
 <message key="modern-impression">Съвременен отпечатък</message>

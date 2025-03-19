@@ -100,7 +100,7 @@
     <message key="menu-index-legendsCases">Cases of legends</message>
     <message key="menu-index-metrical">Metrical legends</message>
     <message key="menu-index-invocation">Invocations</message>
-    <message key="home-title">SigiDoc 1.0: A Sample Corpus</message>
+    <message key="home-title">Corpus Sigillorum Ævi Byzantini</message>
     <message key="bibliographic-concordance">Bibliography</message>
     <message key="inscription-index-zip">The SigiDoc XML files of the seal editions listed below are available in a </message>
     <message key="zip"> ZIP folder</message>
@@ -186,7 +186,7 @@
 <message key="corporate">Corporate</message>
 <message key="undetermined">Undetermined</message>
 <message key="seal">Seal</message>
-<message key="weight">Weight</message>
+<!-- <message key="weight">Weight</message> -->
 <message key="bread-stamp">Bread stamp</message>
 <message key="original-impression">Original impression</message>
 <message key="modern-impression">Modern impression</message>
@@ -266,7 +266,7 @@
 <message key="corporate">Corporate</message>
 <message key="undetermined">Undetermined</message>
 <message key="seal">Seal</message>
-<message key="weight">Weight</message>
+<!-- <message key="weight">Weight</message> -->
 <message key="bread-stamp">Bread stamp</message>
 <message key="original-impression">Original impression</message>
 <message key="modern-impression">Modern impression</message>

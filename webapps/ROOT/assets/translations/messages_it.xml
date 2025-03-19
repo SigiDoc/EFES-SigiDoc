@@ -188,7 +188,7 @@
 <message key="corporate">Istituzionale</message>
 <message key="undetermined">Indeterminato</message>
 <message key="seal">Sigillo</message>
-<message key="weight">Peso</message>
+<!-- <message key="weight">Peso</message> -->
 <message key="bread-stamp">Stampo per pane</message>
 <message key="original-impression">Impronta originale</message>
 <message key="modern-impression">Impronta moderna</message>
@@ -267,7 +267,7 @@
 <message key="corporate">Istituzionale</message>
 <message key="undetermined">Indeterminato</message>
 <message key="seal">Sigillo</message>
-<message key="weight">Peso</message>
+<!-- <message key="weight">Peso</message> -->
 <message key="bread-stamp">Stampo per pane</message>
 <message key="original-impression">Impronta originale</message>
 <message key="modern-impression">Impronta moderna</message>

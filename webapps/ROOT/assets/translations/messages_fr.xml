@@ -188,7 +188,7 @@
 <message key="corporate">Personne morale</message>
 <message key="undetermined">Indéterminé</message>
 <message key="seal">Sceau</message>
-<message key="weight">Poids</message>
+<!-- <message key="weight">Poids</message> -->
 <message key="bread-stamp">Moule à pain</message>
 <message key="original-impression">Empreinte originale</message>
 <message key="modern-impression">Empreinte moderne</message>
@@ -267,7 +267,7 @@
 <message key="corporate">Personne morale</message>
 <message key="undetermined">Indéterminé</message>
 <message key="seal">Sceau</message>
-<message key="weight">Poids</message>
+<!-- <message key="weight">Poids</message> -->
 <message key="bread-stamp">Moule à pain</message>
 <message key="original-impression">Empreinte originale</message>
 <message key="modern-impression">Empreinte moderne</message>

@@ -653,9 +653,9 @@
       
       <script>
         $(function(){
-          $('.result-headline').click(function(){
-          $(this).toggleClass('active');
-          $(this).siblings('.result-details').toggleClass('hidden');
+          $('.result-title').click(function(){
+          $(this).parent().toggleClass('active');
+          $(this).parent().siblings('.result-details').toggleClass('hidden');
           
           });
         });

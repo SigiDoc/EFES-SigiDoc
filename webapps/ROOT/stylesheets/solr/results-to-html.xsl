@@ -151,7 +151,7 @@
     <xsl:variable name="short-filepath" select="substring-after(str[@name = 'file_path'], '/')"/>
     <div class="result">
       <div class="result-headline">
-        <p style="width: 85%">
+        <p class="result-title" style="width: 85%">
           <xsl:choose>
             <xsl:when test="arr[@name = 'document_title']/str[contains(.,concat($language,'|'))]">
               <xsl:value-of select="substring-after(arr[@name = 'document_title']/str[contains(.,concat($language,'|'))],'|')"/>
@@ -161,8 +161,7 @@
             </xsl:otherwise>
           </xsl:choose>
         </p>
-        <a href="{kiln:url-for-match('local-epidoc-display-html', ($language, $short-filepath), 0)}"
-          > view seal</a>
+        <a href="{kiln:url-for-match('local-epidoc-display-html', ($language, $short-filepath), 0)}"> view seal</a>
       </div>
       <div class="result-details hidden">
       <span>
@@ -171,7 +170,7 @@
         </p>
         <div class="result-metadata">
           <p class="period">
-            <b>Century: </b>
+            <b>Date: </b>
             <xsl:value-of select="str[@name = 'origdate']"/>
           </p>
           <!-- <p>

@@ -85,7 +85,27 @@
           <xsl:value-of select="$rdf-name" />
         </xsl:when>
         <xsl:otherwise>
-          <xsl:value-of select="."/>
+          <xsl:choose>
+            <xsl:when test="contains(.,'-')">
+              <xsl:variable name="titles">
+                <xsl:for-each select="tokenize(.,'-')">
+                  <title><xsl:value-of select="."/></title>
+                </xsl:for-each>
+              </xsl:variable>
+              <xsl:variable name="title">
+                <xsl:choose>
+                  <xsl:when test="$titles/title[contains(.,concat($language,'|'))]">
+                    <xsl:value-of select="substring-after($titles/title[contains(.,concat($language,'|'))],'|')"/>
+                  </xsl:when>
+                  <xsl:otherwise><xsl:value-of select="substring-after($titles/title[contains(.,'en|')],'|')"/></xsl:otherwise>
+                </xsl:choose>
+              </xsl:variable>
+              <xsl:value-of select="$title"/>
+            </xsl:when>
+            <xsl:otherwise>  <xsl:value-of select="."/></xsl:otherwise>
+          </xsl:choose>
+          
+
         </xsl:otherwise>
       </xsl:choose>
     </th>
@@ -113,9 +133,18 @@
       </xsl:variable>
       <xsl:for-each select="$bibls/val">
         <xsl:variable name="tokens">
+          <xsl:if test="tokenize(.,'_')[1] != ''" >
+          <name>
+            <xsl:choose>
+              <xsl:when test="position() = 1"><xsl:text>Pleiades: </xsl:text></xsl:when>
+              <xsl:when test="position() = 2"><xsl:text>Geonames: </xsl:text></xsl:when>
+              <xsl:when test="position() = 3"><xsl:text>TIB: </xsl:text></xsl:when>
+            </xsl:choose><xsl:value-of select="tokenize"/></name>
+          </xsl:if>
           <text><xsl:value-of select="tokenize(.,'_')[1]"/></text>
           <link><xsl:value-of select="tokenize(.,'_')[2]"/></link>
         </xsl:variable><p>
+          <span><xsl:value-of select="$tokens/name/text()"/></span>
           <a target="_blank">
             <xsl:attribute name="href">
               <xsl:value-of select="$tokens/link/text()"/>

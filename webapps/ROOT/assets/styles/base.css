@@ -110,6 +110,24 @@ ul.index-instances {
     grid-template-rows: repeat(2, minmax(0, 1fr));
 }
 
+.indices-block-list {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-auto-flow: column; gap: 10px;
+}
+
+.indices-block {
+    border: black 1px solid;
+    padding: 10px;
+    text-align: center;
+}
+
+.indices-block:hover {
+    background-color: #55555525;
+    cursor: pointer;
+}
+
 #site-title {
     background: url("../images/seal.png") center no-repeat;
     height: 220px;
@@ -255,9 +273,12 @@ body {
 }
 
 .result-details {
-  padding: 0 18px;
-  background-color: #efefef;
-  overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    padding: 0 18px;
+    background-color: #efefef;
+    overflow: hidden;
 }
 
 .hidden {
@@ -310,8 +331,11 @@ body {
 
 
 .thumbcontainer{
-    width: 100%;
-    display: flex
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 5px;
 }
 
 .img-text{
@@ -324,6 +348,7 @@ body {
 
 .thumbtext{
     font-size: small;
+    margin-left: auto;
 }
 
 #myBtn {
@@ -334,7 +359,7 @@ body {
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: #562c2c; /* Set a background color */
+  background-color: #637893; /* Set a background color */
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 15px; /* Some padding */
@@ -343,5 +368,5 @@ body {
 }
 
 #myBtn:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
+  background-color: #45658b; /* Add a dark-grey background on hover */
 }

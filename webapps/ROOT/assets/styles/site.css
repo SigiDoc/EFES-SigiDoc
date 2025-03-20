@@ -153,13 +153,15 @@ h6 {
     color: #000;
     font-size: var(--fs-base);
     font-weight: 400;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .export-hide-flex {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 10px;
+    margin-top: 30px;
 }
 
 /* Pagination */
@@ -356,6 +358,10 @@ dl.iospe dd,
     font-size: var(--fs-base);
 }
 
+#translation p {
+    margin-bottom: 3px !important;
+  }
+  
 #biblioEditions,
 #biblioCommEditions,
 #biblioParallels,
@@ -373,15 +379,17 @@ dl.iospe dd,
 .hide-switch{
     /* margin-top: 2em; */
     font-size: var(--fs-base);
-    font-weight: 400;
-    background-color: #562c2c;
+    font-weight: bold;
+    background-color: #637893;
     color: white !important;
     padding: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     border-radius: 5px;
 }
 
 .hide-switch:hover {
-    background-color: #555555;
+    background-color: #45658b;
 }
 
 .hidden{

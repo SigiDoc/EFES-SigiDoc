@@ -10,11 +10,11 @@
 
   <xsl:param name="index_type"/>
   <xsl:param name="subdirectory"/>
-  <xsl:variable name="geography" select="doc('../../content/xml/authority/geography.xml')"/>
+  <xsl:variable name="geography" select="doc('https://raw.githubusercontent.com/SigiDoc/authority/refs/heads/main/geography.xml')"/>
 
   <xsl:template match="/">
     <add>
-      <xsl:for-each-group select="//tei:placeName[@ref][ancestor::tei:div/@type = 'textpart']"
+      <xsl:for-each-group select=".//tei:placeName[@ref][ancestor::tei:div/@type = 'textpart']"
         group-by="@ref">
         <doc>
           <field name="document_type">
@@ -26,17 +26,33 @@
           <xsl:call-template name="field_file_path"/>
           <field name="index_item_name">
             <xsl:variable name="geo-id" select="substring-after(@ref, '#')"/>
+            <xsl:variable name="placenames">              
+              <xsl:for-each select="$geography//tei:place[@xml:id = $geo-id]//tei:placeName">
+                <name><xsl:value-of select="concat(./@xml:lang,'|',./text())"/></name>
+              </xsl:for-each>
+            </xsl:variable>
             <xsl:value-of
-              select="$geography//tei:place[@xml:id = $geo-id]//tei:placeName[@xml:lang = 'grc' or @xml:lang = 'la']"/>
+              select="string-join($placenames/name, '-')"/>
           </field>
           <field name="index_ext_reference">
             <xsl:variable name="geo-id" select="substring-after(@ref, '#')"/>
             <xsl:variable name="geo-string">
               <xsl:for-each select="$geography//tei:place[@xml:id = $geo-id][tei:link]">
+                <xsl:variable name="pleiades">
+                  <xsl:value-of select="concat(tei:idno[@type = 'pleiades'],'_',tei:idno[@type='pleiades']/following-sibling::tei:link[contains(@target,'pleiades')]/@target)"/>
+                </xsl:variable>
+                <xsl:variable name="geonames">
+                  <xsl:value-of select="concat(tei:idno[@type = 'geonames'],'_',tei:idno[@type='geonames']/following-sibling::tei:link[contains(@target,'geonames')]/@target)"/>
+                </xsl:variable>
+                <xsl:variable name="TIB">
+                  <xsl:value-of select="concat(tei:idno[@type = 'TIB'], '_',tei:idno[@type='TIB']/following-sibling::tei:link[contains(@target,'tib')]/@target)"/>
+                </xsl:variable>
+                <xsl:variable name="test" select="."></xsl:variable>
                 <val>
-                  <xsl:value-of select="concat(./tei:idno, '_', ./tei:link/@target)"/>
+                  <xsl:value-of select="concat($pleiades,'|',$geonames,'|',$TIB)"/>    
                 </val>
               </xsl:for-each>
+            
             </xsl:variable>
             <xsl:value-of select="string-join($geo-string/val, '|')"/>
           </field>
@@ -45,9 +61,8 @@
       </xsl:for-each-group>
     </add>
   </xsl:template>
-
+  
   <xsl:template match="tei:placeName">
-    <xsl:call-template name="field_index_instance_location"/>
+  <xsl:call-template name="field_index_instance_location"/>
   </xsl:template>
-
 </xsl:stylesheet>

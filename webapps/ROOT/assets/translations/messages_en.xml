@@ -76,7 +76,7 @@
     <message key="menu-search">Search</message>
     <message key="menu-bibliography">Bibliography</message>
     <message key="menu-admin">Admin</message>
-    <message key="menu-language"><img id="logo-lang" src="/assets/google-icons/translate.svg"/></message>
+    <message key="menu-language"><img id="logo-lang" src="/assets/google-icons/language_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg"/></message>
     <message key="en">English</message>
     <message key="fr">French</message>
     <message key="de">German</message>
@@ -100,7 +100,7 @@
     <message key="menu-index-legendsCases">Cases of legends</message>
     <message key="menu-index-metrical">Metrical legends</message>
     <message key="menu-index-invocation">Invocations</message>
-    <message key="home-title">Corpus Sigillorum Ævi Byzantini</message>
+    <message key="home-title">SigiDoc 1.0: a model corpus</message>
     <message key="bibliographic-concordance">Bibliography</message>
     <message key="inscription-index-zip">The SigiDoc XML files of the seal editions listed below are available in a </message>
     <message key="zip"> ZIP folder</message>

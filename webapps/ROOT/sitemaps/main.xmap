@@ -46,12 +46,36 @@
                   type="image" />
       </map:match>
 
+      <map:match id="local-images-jpeg" pattern="images/**.jpeg">
+        <map:read mime-type="image/jpeg" src="../content/images/{1}.jpeg"
+          type="image" />
+      </map:match>
+      
+      
+      <map:match id="local-images-jpeg" pattern="images/**.tif">
+        <map:read mime-type="image/tiff" src="../content/images/{1}.tif"
+          type="image" />
+      </map:match>
+      
+
       <map:match id="local-images-png" pattern="images/**.png">
         <map:read mime-type="image/png" src="../content/images/{1}.png"
                   type="image" />
       </map:match>
+      
+      <map:match id="local-images-rti" pattern="content/RTI/**/**.jpg">
+        <map:read mime-type="image/jpeg" src="../content/RTI/{1}/{2}.jpg"
+          type="image" />
+      </map:match>
     </map:pipeline>
     
+    <map:pipeline id="local-rti">
+      <map:match id="local-images-rti" pattern="content/RTI/**/info.json">
+        <map:read mime-type="text/json" src="../content/rti/{1}/info.json"/>
+      </map:match>
+      
+ 
+    </map:pipeline>
     
 
     <!-- Main display pipeline. -->

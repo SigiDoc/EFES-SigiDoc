@@ -165,19 +165,22 @@
           > view seal</a>
       </div>
       <div class="result-details hidden">
-        <p>
+      <span>
+      <p>
           <xsl:value-of select="arr[@name = 'translation']/str[1]"/>
         </p>
         <div class="result-metadata">
           <p class="period">
-            <b>period: </b>
+            <b>Century: </b>
             <xsl:value-of select="str[@name = 'origdate']"/>
           </p>
-          <p>
+          <!-- <p>
             <b>mentions: </b>
             <xsl:value-of select="arr[@name = 'personal_names']"/>
-          </p>
+          </p> -->
         </div>
+      </span>
+        
         <div class="thumbcontainer">
           <div class="img-text">
             <img class="thumbnail" src="/assets/images/snapshot1.jpg"/>

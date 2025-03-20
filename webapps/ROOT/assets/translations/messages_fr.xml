@@ -79,7 +79,7 @@
     <message key="menu-search">Rechercher</message>
     <message key="menu-bibliography">Bibliographie</message>
     <message key="menu-admin">Admin</message>
-    <message key="menu-language"><img id="logo-lang" src="/assets/google-icons/translate.svg"/></message>
+    <message key="menu-language"><img id="logo-lang" src="/assets/google-icons/language_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg"/></message>
     <message key="en">Anglais</message>
     <message key="fr">Français</message>
     <message key="de">Allemand</message>

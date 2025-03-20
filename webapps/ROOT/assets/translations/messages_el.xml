@@ -78,7 +78,7 @@
     <message key="menu-search">Αναζήτηση</message>
     <message key="menu-bibliography">Βιβλιογραφία</message>
     <message key="menu-admin">Διαχείριση</message>
-    <message key="menu-language"><img id="logo-lang" src="/assets/google-icons/translate.svg"/></message>
+    <message key="menu-language"><img id="logo-lang" src="/assets/google-icons/language_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg"/></message>
     <message key="en">Αγγλικά</message>
     <message key="fr">Γαλλικά</message>
      <message key="de">Γερμανικά</message>

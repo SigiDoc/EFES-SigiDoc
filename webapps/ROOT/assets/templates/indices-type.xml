@@ -27,9 +27,9 @@
         <div class="large-12 columns" >
           <xsl:apply-templates select="/aggregation/tei:TEI/tei:text/tei:front" />
           <!-- Display the list of indices. -->
-          <ul>
+          <ul class="indices-block-list">
             <xsl:for-each select="/aggregation/tei:TEI/tei:text/tei:body/tei:div">
-              <li>
+              <li class="indices-block">
                 <a href="{kiln:url-for-match('local-index-display-html', ($language, $index_type, @xml:id), 0)}">
                   <xsl:value-of select="tei:head" />
                 </a>

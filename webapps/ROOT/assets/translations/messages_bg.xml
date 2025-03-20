@@ -78,7 +78,7 @@
     <message key="menu-search">xx</message>
     <message key="menu-bibliography">xx</message>
     <message key="menu-admin">Admin</message>
-    <message key="menu-language"><img id="logo-lang" src="/assets/google-icons/translate.svg"/></message>
+    <message key="menu-language"><img id="logo-lang" src="/assets/google-icons/language_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg"/></message>
     <message key="en">xx</message>
     <message key="fr">xx</message>
      <message key="de">xx</message>

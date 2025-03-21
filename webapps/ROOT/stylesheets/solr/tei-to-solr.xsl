@@ -280,7 +280,7 @@
   <xsl:template
     match="tei:listPerson/tei:person/@role"
     mode="facet_milieu">
-      <xsl:variable name="tokenize" select="tokenize(., ' ')"/>
+      <xsl:variable name="tokenize" select="tokenize(normalize-space(.), ' ')"/>
       <xsl:for-each select="$tokenize">
         <field name="milieu">
           <xsl:variable name="normalized" select="replace(.,'-',' ')"/>

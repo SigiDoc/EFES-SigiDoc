@@ -10,12 +10,11 @@
 
   <xsl:param name="index_type"/>
   <xsl:param name="subdirectory"/>
- <!-- <xsl:variable name="prosopography" select="doc('../../content/xml/authority/prosopography.xml')"/> -->
 
   <xsl:template match="/">
     <add>
-      <xsl:for-each-group select="//tei:persName[@ref][ancestor::tei:div/@type = 'textpart']"
-        group-by="@ref">
+      <xsl:for-each-group select="//tei:listPerson/tei:person" group-by="tei:persName[@xml:lang='en']">
+        <xsl:sort select="current-grouping-key()"/>
         <doc>
           <field name="document_type">
             <xsl:value-of select="$subdirectory"/>
@@ -25,27 +24,17 @@
           </field>
           <xsl:call-template name="field_file_path"/>
           <field name="index_item_name">
-            <xsl:variable name="pers-id" select="substring-after(@ref, '#')"/>
-            <!--<xsl:value-of select="string-join($prosopography//tei:person[@xml:id = $pers-id]//tei:reg[@xml:lang = 'grc' or @xml:lang = 'la'],', ')" />-->
-            
             <!--
-            <xsl:variable name="forename"
-              select="$prosopography//tei:person[@xml:id = $pers-id]//tei:forename/tei:reg[@xml:lang = 'grc' or @xml:lang = 'la']"/>
-            <xsl:variable name="surname"
-              select="$prosopography//tei:person[@xml:id = $pers-id]//tei:surname/tei:reg[@xml:lang = 'grc' or @xml:lang = 'la']"/>
-            <xsl:choose>
-              <xsl:when test="$forename and $surname">
-                <xsl:value-of
-                  select="concat($prosopography//tei:person[@xml:id = $pers-id]//$surname, ', ', $forename)"
-                />
-              </xsl:when>
-              <xsl:otherwise>
-                <xsl:value-of
-                  select="$prosopography//tei:person[@xml:id = $pers-id]//tei:reg[@xml:lang = 'grc' or @xml:lang = 'la']"
-                />
-              </xsl:otherwise>
-            </xsl:choose>
+            <xsl:variable name="name">
+              <xsl:for-each select="current-group()/tei:persName">
+                <name>
+                  <xsl:value-of select="concat(./@xml:lang,'|',./tei:forename, ' ', ./tei:surname)"/>
+                </name>
+              </xsl:for-each>
+            </xsl:variable>
             -->
+            <xsl:value-of select="current-grouping-key()"/>
+
           </field>
           <field name="index_ext_reference">
             <xsl:variable name="pers-id" select="substring-after(@ref, '#')"/>

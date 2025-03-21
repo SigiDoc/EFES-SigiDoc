@@ -95,9 +95,9 @@
               <xsl:variable name="title">
                 <xsl:choose>
                   <xsl:when test="$titles/title[contains(.,concat($language,'|'))]">
-                    <xsl:value-of select="substring-after($titles/title[contains(.,concat($language,'|'))],'|')"/>
+                    <xsl:value-of select="substring-after($titles/title[contains(.,concat($language,'|'))][1],'|')"/>
                   </xsl:when>
-                  <xsl:otherwise><xsl:value-of select="substring-after($titles/title[contains(.,'en|')],'|')"/></xsl:otherwise>
+                  <xsl:otherwise><xsl:value-of select="substring-after($titles/title[contains(.,'en|')][1],'|')"/></xsl:otherwise>
                 </xsl:choose>
               </xsl:variable>
               <xsl:value-of select="$title"/>

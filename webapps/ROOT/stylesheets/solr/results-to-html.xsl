@@ -161,7 +161,25 @@
             </xsl:otherwise>
           </xsl:choose>
         </p>
-        <a href="{kiln:url-for-match('local-epidoc-display-html', ($language, $short-filepath), 0)}"> view seal</a>
+        <xsl:variable name="link">
+          <xsl:choose>
+            <xsl:when test="current-grouping-key() = 'IFEB'">
+              <xsl:value-of select="concat('https://ifeb.sigidoc.huma-num.fr','/fr/seals/', $short-filepath,'.html')"/>
+            </xsl:when>
+            
+            <xsl:when test="normalize-space(current-grouping-key()) = 'Yavuz Tatış collection.'">
+              <xsl:value-of select="concat('https://tatis.sigidoc.huma-num.fr','/fr/seals/', $short-filepath,'.html')"/>
+            </xsl:when>
+            <xsl:when test="current-grouping-key() = ''">
+              <xsl:value-of select="concat('https://ifeb.sigidoc.huma-num.fr','/fr/seals/', $short-filepath,'.html')"/>
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:value-of select="kiln:url-for-match('local-epidoc-display-html', ($language, $short-filepath), 0)"/>
+            </xsl:otherwise>
+          </xsl:choose>
+        </xsl:variable>
+        <a href="{$link}"
+          > view seal</a>
       </div>
       <div class="result-details hidden">
       <span>

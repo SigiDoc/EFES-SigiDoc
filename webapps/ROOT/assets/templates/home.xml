@@ -16,8 +16,18 @@
       <div class="row">
         <div class="large-12 columns text-center">
           <h1>
-            <i18n:text i18n:key="home-title"></i18n:text>
+            <i18n:text i18n:key="home-title"/>
           </h1>
+          <h2>(İzmir)</h2>
+          <h4><i18n:text i18n:key="home-editor">Édition des sceaux</i18n:text>: <a
+              href="https://www.orient-mediterranee.com/member/cheynet-jean/" target="_blank"
+              >Jean-Claude Cheynet</a></h4>
+          <h4><i18n:text i18n:key="home-digi-editor">Édition numérique</i18n:text>: <a
+              href="https://www.orient-mediterranee.com/member/sopracasa-alessio/" target="_blank"
+              >Alessio Sopracasa</a>, <a
+              href="https://www.orient-mediterranee.com/member/buchs-numa/" target="_blank">Numa
+              Buchs</a>, <a href="https://www.orient-mediterranee.com/member/meziridou-sima/"
+              target="_blank">Sima Meziridou</a></h4>
         </div>
       </div>
     </kiln:block>
@@ -26,8 +36,8 @@
       <main>
         <div class="row">
           <div class="large-12 columns">
-          <img class="landing-img" src="/assets/images/seal.png"/>
-          <!-- <div class="landing-page-container">
+            <img class="landing-img" src="/assets/images/seal.png"/>
+            <!-- <div class="landing-page-container">
             <div class="landing-panel">
             <img src="/assets/google-icons/download_24dp_562C2C_FILL0_wght400_GRAD0_opsz24.svg"/>
             <h3> About </h3>
@@ -60,32 +70,97 @@
             </div>
           </div> -->
             <div class="panel radius">
-              
+
               <!-- <div class="landing-img" id="site-title"></div> -->
-              <p>Seals are the only remnants of the written documents used for daily administration
-                and private correspondence from the 4th to the 15th C. in the Byzantine Empire –
-                i.e. the Christian eastern medieval empire centred upon Constantinople – whose
-                public and private archives are nearly entirely lost. As such seals do not
-                supplement archival material but have to substitute it, which explains the unique
-                importance of sigillography for Byzantine studies.</p>
-              <p>SigiDoc provides XML-based and TEI-compliant encoding standards for the description
-                and edition of Byzantine seals: as such, it aims to establish a set of rules and
-                guidelines to publish Byzantine seals in digital form. SigiDoc is intended for both
-                the creation of digital-born editions as well as digital conversion of paper
-                publications and has been conceived to provide the users with a common basis for
-                developing their projects and to give them the freedom to customise their
-                approach.</p>
-              <p>SigiDoc is largely based on the ongoing experience of EpiDoc and aims at becoming
-                the standard tool for the spreading of digital sigillography while delivering a
-                standard for the digital encoding of Byzantine seals. </p>
+              <p>Les sceaux byzantins présentés ici constituent l'édition numérique de la
+                publication donnée en 2019 par Jean-Claude Cheynet des bulles appartenant à la
+                collection privée de M. <a href="http://viaf.org/viaf/48683064" target="_blank"
+                  >Yavuz Tatış</a>: <a
+                  href="https://www.orient-mediterranee.com/activity/les-sceaux-byzantins-de-la-collection-yavuz-tatis/"
+                  target="_blank">Jean-Claude Cheynet, <i>Les sceaux byzantins de la collection
+                    Yavuz Tatış</i>, İzmir 2019</a>. Les travaux se déoulent dans le cadre du projet
+                franco-allemand <a
+                  href="https://www.orient-mediterranee.com/program/reveler-le-potentiel-meconnu-des-sceaux-nouvelles-methodologies-pour-la-recherche-historique-dans-le-domaine-des-etudes-byzantines/"
+                  target="_blank">ANR-DFG <i>DigiByzSeal</i></a> et sont actuellement en colurs. La
+                présente édition reprend sans modifications le texte précédemment publié, avec la
+                différence que la transcription diplomatique est donnée, non plus en police Athena,
+                mais avec la police <a href="https://www.doaks.org/resources/athena-ruby"
+                  target="_blank">Athena Ruby</a> développée par le centre de Dumbarton Oaks.</p>
+              <h4>Présentation</h4>
+              <p>Les découvertes de sceaux byzantins se sont multipliées en Turquie ces dernières
+                années. Une partie de ces trouvailles fortuites a alimenté le marché des ventes aux
+                enchères en Europe et aux États-Unis. On ne peut donc que se réjouir de voir des
+                collectionneurs turcs s’intéresser à ce type de matériel qui est ainsi préservé dans
+                son pays d’origine. Les collectionneurs privés ne sont pas tous connus des
+                sigillographes, mais il est certain que l’ensemble des bulles byzantines, réuni par
+                Monsieur <a href="http://viaf.org/viaf/48683064" target="_blank">Yavuz Tatış</a>,
+                est l’un des plus importants de Turquie. La collection comprend plus de quatre cent
+                cinquante plombs dont la plupart sont en très bonne condition, voire d’une qualité
+                de gravure exceptionnelle. Elle présente aussi l’avantage de faire connaître, pour
+                une partie de cet ensemble, le lieu ou du moins la région de trouvaille des plombs.
+                Certes la qualité de l’information est moins assurée que lors de la découverte de
+                bulles au cours de fouilles. Comme le montre la lecture du catalogue, la règle de la
+                faible circulation des sceaux, en dehors de ceux de l’administration centrale, se
+                trouve une fois de plus largement vérifiée lorsqu’on peut mettre en rapport une
+                région de trouvaille et une fonction administrative locale. Toutefois, des bulles de
+                fonctionnaires exerçant dans la partie orientale de l’Anatolie, ducs d’Edesse,
+                catépan d’Antioche, juge du Charsianon, auraient été découverts dans les provinces
+                égéennes. C’est particulièrement vrai pour l’indication Turquie ou Anatolie
+                occidentale. La majeure partie des sceaux dont la provenance précise n’est pas
+                connue résulte de découvertes fortuites, soit dans les provinces de la côte égéenne,
+                soit du sud-est anatolien, qui se manifeste, entre autres, par plusieurs sceaux au
+                nom de Marchapsabos ou Brachamios et pas moins de neuf sceaux d’un certain Kosmas,
+                provenant d’Adana et de ses environs.</p>
+              <p>La côte égéenne correspond pour une bonne part à l’ancien thème des Thracésiens.
+                Parmi les bulles des fonctionnaires de l’administration centrale entrées dans cette
+                collection, la place des services en lien avec la gestion des biens publics est
+                notable. Des institutions constantinopolitaines, comme les Manganes, sont aussi bien
+                représentées, ce qui confirme l’importance de leurs possessions foncières dans ce
+                thème.</p>
+              <p>Les bulles liées au thème des Thracésiens, que ce soit celles des fonctionnaires ou
+                celles des membres de la hiérarchie ecclésiastique locale, sont proportionnellement
+                beaucoup plus nombreuses que celles de leurs collègues exerçant dans les autres
+                thèmes anatoliens et, davantage encore, dans les thèmes occidentaux. Globalement, la
+                présence des fonctionnaires occidentaux est réduite puisque, sur cinquante-huit
+                sceaux de provinciaux, ils ne sont que six au plus, comparativement aux
+                fonctionnaires des Anatoliques (six), des Cibyrrhéotes (quatre), de l’Opsikion
+                (sept) et des Thracésiens (douze). Cette prédominance d’une origine anatolienne
+                explique le faible nombre de bulles postérieures au XIe siècle. Tous les sceaux sont
+                inédits, à très peu d’exceptions près. Beaucoup n’ont pas de parallèles et apportent
+                donc de nouvelles informations.</p>
+              <p>La datation des sceaux a été effectuée, en règle générale, au demi-siècle près,
+                c’est-à-dire que Xe/XIe siècle se traduit par 975-1025, que le milieu du XIe siècle
+                équivaut à 1025-1075… Parfois une datation plus précise est possible, lorsque le
+                sigillant est clairement identifié et que des informations sur la chronologie de sa
+                carrière sont données par d’autres sources. La datation des monogrammes reste assez
+                imprécise, les monogrammes cruciformes étant estimés plus récents que les
+                compositions compactes. Cependant, Werner Seibt rappelle que le premier monogramme
+                cruciforme connu remonte au règne de Justin Ier, gravé sur une monnaie d’Antioche,
+                mais cela ne signifie pas que le type cruciforme s’est immédiatement développé sur
+                les sceaux. Les plombs au motif de l’aigle essorante ont été attribués au VIIe
+                siècle, sauf ceux dont la légende du revers est au datif, qui ont pu être frappés au
+                début du VIIIe siècle. Les sceaux à monogramme invocatif cantonné du tétragramme τῷ
+                δούλῳ σου, avec la ligature omicron-upsilon ornée d’empattements obliques, sont
+                datés du VIIIe siècle. Lorsqu’une croisette accostée de fleurons précède et suit la
+                légende, une datation de la première moitié du VIIIe siècle, voire du premier quart
+                est préférable. La croix patriarcale sans décor est datée du derniers tiers du IXe
+                siècle. Les fleurons issant de la base se développent au cours du VIIIe siècle
+                jusqu’à atteindre le sommet de la croix sous Basile II (976-1025). En ce qui
+                concerne les critères épigraphiques, j’ai suivi les conclusions de N. Oikonomidès,
+                dans ses <i>Dated Seals</i> (p. 165-169).</p>
+              <p>Extrait (avec modifications mineures) de: Jean-Claude Cheynet, <i>Les sceaux
+                  byzantins de la collection Yavuz Tatış</i>, İzmir 2019, p. 6-7.</p>
             </div>
             <div class="row">
               <div class="large-12 columns text-center">
                 <div class="panel radius">
-                  <p>The full bibliographical description of this publication: <strong>[to be changed by each project]</strong>,
-                    available at: <strong>[to be changed by each project]</strong>.</p> <p>This should be abbreviated to <strong>[to be changed by each project]</strong>.</p>
+                  <p>The full bibliographical description of this publication: <strong>[to be
+                      changed by each project]</strong>, available at: <strong>[to be changed by
+                      each project]</strong>.</p>
+                  <p>This should be abbreviated to <strong>[to be changed by each
+                    project]</strong>.</p>
                   <p>GitHub repository available <a href="https://github.com/SigiDoc"
-                    target="_blank">https://github.com/SigiDoc</a>.</p>
+                      target="_blank">https://github.com/SigiDoc</a>.</p>
                   <p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
                       <img alt="Creative Commons License" style="border-width:0"
                         src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"/>

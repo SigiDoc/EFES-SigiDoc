@@ -55,7 +55,7 @@
     <xsl:variable name="collectionname" select="./preceding-sibling::arr[@name='collection']"/>
     <td>
       <a href="{kiln:url-for-match($match_id, ($language, $filename), 0)}">
-        <xsl:value-of select="concat($collectionname,'-', .)"/>
+        <xsl:value-of select="."/>
       </a>
     </td>
   </xsl:template>

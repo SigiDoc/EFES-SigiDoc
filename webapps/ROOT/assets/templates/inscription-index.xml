@@ -24,7 +24,7 @@
 
     <kiln:block name="page-heading">
       <kiln:super />
-      <i18n:text i18n:key="inscription-index-seals"><xsl:text>Seals</xsl:text></i18n:text>
+      Yavuz Tatış collection
     </kiln:block>
 
     <kiln:block name="content">

@@ -157,7 +157,7 @@
               <div class="large-12 columns text-center">
                 <div class="panel radius">
                   <p>The full bibliographical description of this publication: <strong>[to be
-                      changed by each project]</strong>, available at: <a href="https://tatis.sigidoc.huma-num.fr/">https://tatis.sigidoc.huma-num.fr/</a>.</p>
+                      changed by each project]</strong>, available at: <a href="https://tatis.sigidoc.huma-num.fr/" target="_blank">https://tatis.sigidoc.huma-num.fr/</a>.</p>
                   <p>This should be abbreviated to <strong>[to be changed by each
                     project]</strong>.</p>
                   <p>GitHub repository available <a href="https://github.com/SigiDoc/EFES-SigiDoc"

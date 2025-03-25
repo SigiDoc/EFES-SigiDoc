@@ -157,12 +157,11 @@
               <div class="large-12 columns text-center">
                 <div class="panel radius">
                   <p>The full bibliographical description of this publication: <strong>[to be
-                      changed by each project]</strong>, available at: <strong>[to be changed by
-                      each project]</strong>.</p>
+                      changed by each project]</strong>, available at: <a href="https://tatis.sigidoc.huma-num.fr/">https://tatis.sigidoc.huma-num.fr/</a>.</p>
                   <p>This should be abbreviated to <strong>[to be changed by each
                     project]</strong>.</p>
-                  <p>GitHub repository available <a href="https://github.com/SigiDoc"
-                      target="_blank">https://github.com/SigiDoc</a>.</p>
+                  <p>GitHub repository available <a href="https://github.com/SigiDoc/EFES-SigiDoc"
+                      target="_blank">https://github.com/SigiDoc/EFES-SigiDoc</a>.</p>
                   <p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
                       <img alt="Creative Commons License" style="border-width:0"
                         src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"/>

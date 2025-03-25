@@ -158,6 +158,21 @@ ul.index-instances {
 
 .landing-img {
     margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.lp-h1 {
+    margin-bottom: 0px !important;
+}
+
+.lp-h3 {
+    opacity: 0.5;
+}
+
+.lp-h5-div {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
 }
 
 .landing-page-container {

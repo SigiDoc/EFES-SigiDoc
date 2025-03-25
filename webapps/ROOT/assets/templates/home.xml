@@ -15,19 +15,21 @@
     <kiln:block name="page-header">
       <div class="row">
         <div class="large-12 columns text-center">
-          <h1>
+          <h1 class="lp-h1">
             <i18n:text i18n:key="home-title"/>
           </h1>
-          <h2>(İzmir)</h2>
-          <h4><i18n:text i18n:key="home-editor">Édition des sceaux</i18n:text>: <a
+          <h3 class="lp-h3">İzmir</h3>
+          <div class="lp-h5-div text-left">
+          <h5><i18n:text i18n:key="home-editor">Édition des sceaux</i18n:text>: <a
               href="https://www.orient-mediterranee.com/member/cheynet-jean/" target="_blank"
-              >Jean-Claude Cheynet</a></h4>
-          <h4><i18n:text i18n:key="home-digi-editor">Édition numérique</i18n:text>: <a
+              >Jean-Claude Cheynet</a></h5>
+          <h5><i18n:text i18n:key="home-digi-editor">Édition numérique</i18n:text>: <a
               href="https://www.orient-mediterranee.com/member/sopracasa-alessio/" target="_blank"
               >Alessio Sopracasa</a>, <a
               href="https://www.orient-mediterranee.com/member/buchs-numa/" target="_blank">Numa
               Buchs</a>, <a href="https://www.orient-mediterranee.com/member/meziridou-sima/"
-              target="_blank">Sima Meziridou</a></h4>
+              target="_blank">Sima Meziridou</a></h5>
+           </div>
         </div>
       </div>
     </kiln:block>

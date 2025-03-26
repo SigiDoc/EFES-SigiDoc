@@ -100,11 +100,9 @@
     <message key="menu-index-legendsCases">Cases of legends</message>
     <message key="menu-index-metrical">Metrical legends</message>
     <message key="menu-index-invocation">Invocations</message>
-    <message key="home-title">Corpus Sigillorum Ævi Byzantini</message>
-
+    <message key="home-title">The Byzantine Seals of the George Zacos Collection</message>
     <message key="home-editor">Edition of the seals</message>
     <message key="home-digi-editor">Digital edition</message>
-
     <message key="bibliographic-concordance">Bibliography</message>
     <message key="inscription-index-zip">The SigiDoc XML files of the seal editions listed below are available in a </message>
     <message key="zip"> ZIP folder</message>

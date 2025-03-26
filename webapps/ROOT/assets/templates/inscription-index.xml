@@ -23,7 +23,8 @@
     </kiln:block>
 
     <kiln:block name="page-heading">
-      <kiln:super />IFEB
+      <kiln:super />
+           Zacos BnF
     </kiln:block>
 
     <kiln:block name="content">

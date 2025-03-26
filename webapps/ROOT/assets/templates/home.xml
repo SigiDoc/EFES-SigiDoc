@@ -18,9 +18,9 @@
           <h1 class="lp-h1">
             <i18n:text i18n:key="home-title"/>
           </h1>
-          <h3 class="lp-h3">Institut Catholique de Paris, Institut Français d'Études Byzantines</h3>
+          <h3 class="lp-h3">Bibliothèque nationale de France</h3>
           <div class="lp-h5-div text-left">
-          <h5 class=""><i18n:text i18n:key="home-editor">Édition des sceaux</i18n:text>: <a
+          <h5><i18n:text i18n:key="home-editor">Édition des sceaux</i18n:text>: <a
               href="https://www.orient-mediterranee.com/member/cheynet-jean/" target="_blank"
               >Jean-Claude Cheynet</a>, <a
               href="https://www.orient-mediterranee.com/member/prigent-vivien/" target="_blank"
@@ -39,9 +39,10 @@
       <main>
         <div class="row text-left">
           <div class="large-12 columns">
-          <div class="landing-page-container">
-            <a href="{kiln:url-for-match('local-about', ($language, ()), 0)}" target="_blank" class="landing-panel">
-            <img class="panel-icon" src="/assets/google-icons/info_24dp_45658B_FILL0_wght400_GRAD0_opsz24.svg"/>
+            <img class="landing-img" src="/assets/images/seal.png"/>
+            <!-- <div class="landing-page-container">
+            <div class="landing-panel">
+            <img src="/assets/google-icons/download_24dp_562C2C_FILL0_wght400_GRAD0_opsz24.svg"/>
             <h3> About </h3>
             <p>Learn more about this portal</p>
             </a>
@@ -72,36 +73,105 @@
             </div>
           </div> 
             <div class="panel radius">
-
-              <h4>Mission Statement</h4>
               <!-- <div class="landing-img" id="site-title"></div> -->
-              <p>Over 100,000 Byzantine seals are housed in a wide array of collections,
-               many of which are only partially published or presented across scattered books,
-               articles or platforms. For the first time, this Portal offers a unified entry point,
-               allowing these dispersed holdings to be comprehensively searched—and unlocking new avenues for research.</p>
-
-              <p>The lack of publicly accessible information on seals has long been a major gap in Byzantine sigillography.
-               This initiative responds to that need by offering a user-friendly and pragmatic platform for sharing data,
-                with minimal requirements for participation.</p>
-
-              <p>Every seal description remains clearly credited to its respective contributor,
-               who retains full responsibility for the content.</p>
-
-               <p>With CSÆB, you can search a metacorpus comprising potentially tens of thousands of seals from various collections—all in a single click.</p>
-            </div>
-            <div class="panel radius">
-              <h4>Getting started</h4>
-              <p>Get in touch with the DigiByzSeal project team.</p> <!--MAIL ODER WEBSITE-->
-              <p>We will support you in exploring the most suitable option and guide you in preparing your data to meet the minimal participation standards.</p>
-              <p>Our goal is to make contributing as easy and accessible as possible.</p>
+              <p>Le corpus sigillographique en cours de publication ici représente la première
+                entreprise d'édition systématique des sceaux de la Collection George Zacos de la
+                Bibliothèque nationale de France. Les travaux ont débuté dans le cadre du projet
+                franco-allemand <a
+                  href="https://www.orient-mediterranee.com/program/reveler-le-potentiel-meconnu-des-sceaux-nouvelles-methodologies-pour-la-recherche-historique-dans-le-domaine-des-etudes-byzantines/"
+                  target="_blank">ANR-DFG <i>DigiByzSeal</i></a> et vont se poursuivre au-delà de la
+                date de fin du projet. L'ensemble choisi pour commencer cette publication est celui
+                des sceaux avec une légende comportant un nom transmissible.</p>
+              <h3>Présentation</h3>
+              <h4>La donation Zacos à la Bibliothèque nationale de France</h4>
+              <p>En 1998, Madame <a href="https://www.wikidata.org/wiki/Q34625788" target="_blank"
+                  >Janet Zacos</a> a fait don au Cabinet des Médailles de la Bibliothèque nationale
+                de France (BnF), aujourd'hui <a
+                  href="https://www.bnf.fr/fr/departement-monnaies-medailles-antiques"
+                  target="_blank">Département des Monnaies, Médailles et Antiques</a>, de la
+                collection de sceaux rassemblée par son époux, Monsieur <a
+                  href="https://www.wikidata.org/wiki/Q1509099" target="_blank">George Zacos</a>,
+                comprenant 6300 plombs, en trés bon état de conservation. La collection ainsi entrée
+                à la Bibliothéque nationale de France hisse d'un seul coup dans ce domaine le
+                Cabinet des Médailles au niveau des trois plus grandes collections du monde, après
+                celle de Dumbarton Oaks à Washington et celle du Musée de l'Ermitage à
+                Saint-Pétersbourg. Dans toute l'histoire des séries byzantines du Cabinet, c'est la
+                donation la plus importante jamais recue depuis celle de la collection Schlumberger
+                en 1926. Madame Janet Zacos a également offert la photothéque de son époux, qui
+                comprend non seulement les photographies des sceaux donnés, mais aussi une part
+                notable des nombreux clichés des plombs conservés à Dumbarton Oaks et dans diverses
+                collections publiques et privées.</p>
+              <h4>La carrière de George Zacos</h4>
+              <p>George Zacos naquit en 1911 à Istanbul. Issu d'une famille de la petite bourgeoisie
+                grecque, il fit ses études secondaires au collège américain d'Istanbul, le Robert
+                College. Alors qu'il atteignait quatorze ans, son pére demanda à un ami de la
+                famille et antiquaire réputé, Andronikos, de lui apprendre le métier. Devenu adulte,
+                George Zacos s'installa à son compte. Les années de la guerre et de l'immédiat
+                après-guerre furent difficiles. Ayant dû temporairement quitter Istanbul pour
+                l'Anatolie, il revint, ayant contracté la malaria. Il s'était d'abord intéressé aux
+                monnaies byzantines, puis il rencontra le <a
+                  href="https://www.wikidata.org/wiki/Q15709784" target="_blank">Père V.
+                Laurent</a>, qui lui enseigna la sigillographie byzantine. George Zacos vendit alors
+                les monnaies d'or qui lui restaient et se mit à acheter les sceaux en quantité,
+                changeant l'or en plomb. Cette première collection fut vendue en 1951, établissant
+                définitivement la réputation internationale de l'antiquaire. En 1963, il quitta
+                Constantinople pour s'installer en Suisse, où il résida jusqu'a sa mort en 1983. </p>
+              <p>George Zacos ne fut pas seulement collectionneur et marchand, mais devint, avec le
+                Père V. Laurent, un spécialiste renommé, appuyant ses recherches sur un vaste fonds
+                documentaire, qui fut dispersé en 1993. Il publia, en collaboration avec A. Veglery,
+                les quatre tomes du volume des <i>Byzantine Lead Seals</i>, George Zacos finançant
+                lui-même l'impression d'une haute qualité technique de cet ouvrage de référence, qui
+                reste indispensable à tout historien de Byzance. L'ouvrage, qui comprend I'édition
+                de plus de trois mille sceaux, apportait de nombreux inédits et donnait la première
+                étude systématique sur les sceaux des commerciaires, matériel de première importance
+                pour l'histoire des siècles dits obscurs. George Zacos publiait aussi, avec un
+                commentaire détaillé, une série de plombs ayant appartenu aux membres des
+                différentes familles régnantes de Byzance, notamment celle des Comnenes. Cette
+                étude, non seulement est indispensable aux prosopographes, mais donne des
+                informations de premier ordre sur l'évolution de la couche dirigeante. La mort, en
+                1983, empêcha George Zacos de poursuivre la publication du corpus sous la forme
+                qu'il avait projeté, mais un second volume, posthume, fut édité sous I'impulsion de
+                Madame Janet Zacos, avec l'aide de <a href="http://viaf.org/viaf/268090557"
+                  target="_blank">J. Nesbitt</a>.</p>
+              <h4>La collection Zacos</h4>
+              <p>George Zacos constitua une première collection de plus de dix mille plombs, dont la
+                plus grande partie provenait d'Istanbul: une partie fut achetée aux jeunes gens, les
+                araïdjis, qui allaient, après une forte tempête, les recueillir le long de la plage
+                qui bordait la muraille maritime, la mer ramenant des sceaux enlevés aux déblais
+                jetés là aprés les aménagements du centre d'Istanbul, près de la Mésè. C'est cette
+                première collection d'environ dix mille plombs qui fut vendue en 1951 à Monsieur <a
+                  href="https://www.doaks.org/resources/bliss-tyler-correspondence/annotations/robert-woods-bliss"
+                  target="_blank">Robert</a> et Madame <a
+                  href="https://www.doaks.org/resources/bliss-tyler-correspondence/annotations/mildred-barnes-bliss"
+                  target="_blank">Mildred</a> Bliss et entra ainsi au Centre d'études byzantines de
+                Dumbarton Oaks. Ces sceaux se reconnaissent par leur numérotation qui commence par
+                55.1 et par 58.106.</p>
+              <p>Ensuite, George Zacos recommença une nouvelle collection à Istanbul, puis à Bâle,
+                qui atteignait au moment de sa mort autour de 7000 pièces, dont 6300 sont désormais
+                à la BnF. Trois ventes aux enchères, organisées par la Maison Spink de Londres, ont
+                déjà eu lieu, qui ont permis de vendre la moitié du reste. La nouvelle collection
+                connut quelques tribulations. George Zacos ayant loué à un Grec d'Istanbul la maison
+                paternelle, le locataire brisa la porte de la piéce où étaient entreposés les plombs
+                et les vendit. George Zacos dut ainsi racheter, une seconde fois, certains de ses
+                propres sceaux. II put aussi acquérir des collections déja constituées, comme celles
+                de Diamanti et de Papadopoulos.</p>
+              <p>Présentation extraite (avec modifications mineures) de: Jean-Claude Cheynet, <i>Sceaux de la
+                  collection Zacos (Bibliothèque nationale de France) se rapportant aux provinces
+                  orientales de l'Empire byzantin: exposition organisée par le Département des
+                  monnaies, médailles et antiques, Bibliothèque nationale de France (16 juillet - 14
+                  octobre 2001</i>, Paris 2001, p. 5-7; voir aussi la présentation de George et
+                Janet Zacos sur le <a
+                  href="https://comitehistoire.bnf.fr/dictionnaire-fonds/georges-janet-zacos"
+                  target="_blank">site de la BnF</a>.</p>
 
             </div>
             <div class="row">
               <div class="large-12 columns">
                 <div class="panel radius">
-                <h4>License</h4>
-                  <p>The full bibliographical description of this publication: <strong>[to be changed by each project]</strong>,
-                    available at: <a href="https://sigidoc.cceh.uni-koeln.de/en/">https://sigidoc.cceh.uni-koeln.de/en/</a>.</p> <p>This should be abbreviated to <strong>[to be changed by each project]</strong>.</p>
+                  <p>The full bibliographical description of this publication: <strong>[to be
+                      changed by each project]</strong>, available at: <a href="https://zacos.sigidoc.huma-num.fr/" target="_blank">https://zacos.sigidoc.huma-num.fr/</a>.</p>
+                  <p>This should be abbreviated to <strong>[to be changed by each
+                    project]</strong>.</p>
                   <p>GitHub repository available <a href="https://github.com/SigiDoc/EFES-SigiDoc"
                       target="_blank">https://github.com/SigiDoc/EFES-SigiDoc</a>.</p>
                   <p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">

@@ -103,7 +103,10 @@
     <message key="menu-index-legendsCases">Kasus der Inschriften</message>
     <message key="menu-index-metrical">Metrische Inschriften</message>
     <message key="menu-index-invocation">Invokationen</message>
-    <!--<message key="home-title">SigiDoc 1.0: un corpus modèle</message>-->
+    <message key="home-title">Die Byzantinischen Siegel der Robert Feind Sammlung</message>
+    <message key="cologne">Köln</message>
+    <message key="home-editor">Edition der Siegel</message>
+    <message key="home-digi-editor">Digitale Edition</message>
     <message key="bibliographic-concordance">Literatur</message>
     <message key="inscription-index-zip">Die SigiDoc-XML-Dateien der in der folgenden Liste aufgeführten Siegel-Editionen sind verfügbar in einem</message>
     <message key="zip"> ZIP Ordner</message>

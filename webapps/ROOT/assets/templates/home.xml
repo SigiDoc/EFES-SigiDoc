@@ -9,27 +9,26 @@
 
   <kiln:child>
     <kiln:block name="title">
-      <i18n:text>SigiDoc: Home</i18n:text>
+      <i18n:text>Feind: Home</i18n:text>
     </kiln:block>
 
     <kiln:block name="page-header">
       <div class="row">
         <div class="large-12 columns text-center">
           <h1 class="lp-h1">
-            <i18n:text i18n:key="home-title"/>
+            <i18n:text i18n:key="home-title"></i18n:text>
           </h1>
-          <h3 class="lp-h3">Institut Catholique de Paris, Institut Français d'Études Byzantines</h3>
+          <h3 class="lp-h3"><i18n:text i18n:key="cologne">Köln</i18n:text></h3>
           <div class="lp-h5-div text-left">
-          <h5 class=""><i18n:text i18n:key="home-editor">Édition des sceaux</i18n:text>: <a
-              href="https://www.orient-mediterranee.com/member/cheynet-jean/" target="_blank"
-              >Jean-Claude Cheynet</a>, <a
-              href="https://www.orient-mediterranee.com/member/prigent-vivien/" target="_blank"
-              >Vivien Prigent</a>, <a
-              href="https://www.orient-mediterranee.com/member/sopracasa-alessio/" target="_blank"
-              >Alessio Sopracasa</a></h5>
-          <h5><i18n:text i18n:key="home-digi-editor">Édition numérique</i18n:text>: <a
-              href="https://www.orient-mediterranee.com/member/sopracasa-alessio/" target="_blank"
-              >Alessio Sopracasa</a></h5>
+          <h5><i18n:text i18n:key="home-editor">Edition der Siegel</i18n:text>: 
+           <a href="https://ifa.phil-fak.uni-koeln.de/mitarbeiterinnen/nach-abteilungen-einrichtungen/byzantinistik-und-neugriechische-philologie/filosa" target="_blank">Martina Filosa</a>,
+           <a href="https://ifa.phil-fak.uni-koeln.de/mitarbeiterinnen/nach-abteilungen-einrichtungen/byzantinistik-und-neugriechische-philologie/catalano" target="_blank">Maria Teresa Catalano</a>,
+           <a href="https://ifa.phil-fak.uni-koeln.de/en/mitarbeiterinnen/nach-abteilungen-einrichtungen/byzantinistik-und-neugriechische-philologie/sode" target="_blank">Claudia Sode</a>
+           </h5>
+          <h5><i18n:text i18n:key="home-digi-editor">Digitale Edition</i18n:text>: 
+          <a href="https://ifa.phil-fak.uni-koeln.de/mitarbeiterinnen/nach-abteilungen-einrichtungen/byzantinistik-und-neugriechische-philologie/evening" target="_blank">Pia Tabea Charlene Evening</a>,
+          <a href="https://ifa.phil-fak.uni-koeln.de/mitarbeiterinnen/nach-abteilungen-einrichtungen/byzantinistik-und-neugriechische-philologie/efthymoglou" target="_blank">Sofia Efthymoglou</a>
+          </h5>
           </div>
         </div>
       </div>
@@ -39,38 +38,7 @@
       <main>
         <div class="row text-left">
           <div class="large-12 columns">
-          <div class="landing-page-container">
-            <a href="{kiln:url-for-match('local-about', ($language, ()), 0)}" target="_blank" class="landing-panel">
-            <img class="panel-icon" src="/assets/google-icons/info_24dp_45658B_FILL0_wght400_GRAD0_opsz24.svg"/>
-            <h3> About </h3>
-            <p>Learn more about this portal</p>
-            </a>
-            <a href="{kiln:url-for-match('local-search', ($language, ()), 0)}" target="_blank" class="landing-panel">
-            <img class="panel-icon" src="/assets/google-icons/database_search_24dp_45658B_FILL0_wght400_GRAD0_opsz24.svg"/>
-            <h3> Search </h3>
-            <p>Search the collections</p>
-            </a>
-            <a href="{kiln:url-for-match('local-collections', ($language, ()), 0)}" target="_blank" class="landing-panel">
-            <img class="panel-icon" src="/assets/google-icons/apps_24dp_45658B_FILL0_wght400_GRAD0_opsz24.svg"/>
-            <h3> Collections </h3>
-            <p>See all collections</p>
-            </a>
-            <a href="{kiln:url-for-match('local-guidelines', ($language, ()), 0)}" target="_blank" class="landing-panel">
-            <img class="panel-icon" src="/assets/google-icons/auto_stories_24dp_45658B_FILL0_wght400_GRAD0_opsz24.svg"/>
-            <h3> Guidelines </h3>
-            <p>More information on how to search</p>
-            </a>
-            <a href="{kiln:url-for-match('local-team', ($language, ()), 0)}" target="_blank" class="landing-panel">
-            <img class="panel-icon" src="/assets/google-icons/groups_24dp_45658B_FILL0_wght400_GRAD0_opsz24.svg"/>
-            <h3> Team </h3>
-            <p>Get to know our team</p>
-            </a>
-            <div class="landing-panel">
-            <img class="panel-icon" src="/assets/google-icons/data_usage_24dp_45658B_FILL0_wght400_GRAD0_opsz24.svg"/>
-              <h3> <xsl:value-of select="count(//doc)"></xsl:value-of></h3>
-            <p>Objects in all collections</p>
-            </div>
-          </div> 
+          <img class="landing-img" src="/assets/images/seal.png"/>
             <div class="panel radius">
 
               <h4>Mission Statement</h4>
@@ -99,11 +67,9 @@
             <div class="row">
               <div class="large-12 columns">
                 <div class="panel radius">
-                <h4>License</h4>
-                  <p>The full bibliographical description of this publication: <strong>[to be changed by each project]</strong>,
-                    available at: <a href="https://sigidoc.cceh.uni-koeln.de/en/">https://sigidoc.cceh.uni-koeln.de/en/</a>.</p> <p>This should be abbreviated to <strong>[to be changed by each project]</strong>.</p>
-                  <p>GitHub repository available <a href="https://github.com/SigiDoc/EFES-SigiDoc"
-                      target="_blank">https://github.com/SigiDoc/EFES-SigiDoc</a>.</p>
+                  <p>This edition should be cited as <strong>Sammlung Feind, Köln</strong>, available at <a target="_blank" href="https://feind.sigidoc.cceh.uni-koeln.de/en/">https://feind.sigidoc.cceh.uni-koeln.de/en/</a>.</p> 
+                  <p>GitHub repository available <a href="https://github.com/byzantinistik-koeln/EFES-SigiDoc-feind"
+                    target="_blank">https://github.com/byzantinistik-koeln/EFES-SigiDoc-feind</a>.</p>
                   <p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
                       <img alt="Creative Commons License" style="border-width:0"
                         src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"/>

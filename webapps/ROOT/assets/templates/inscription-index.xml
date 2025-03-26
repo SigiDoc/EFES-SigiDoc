@@ -23,7 +23,9 @@
     </kiln:block>
 
     <kiln:block name="page-heading">
-      <kiln:super />IFEB
+
+      <kiln:super />
+               Sammlung Robert Feind
     </kiln:block>
 
     <kiln:block name="content">

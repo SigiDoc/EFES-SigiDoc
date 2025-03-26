@@ -23,7 +23,10 @@
     </kiln:block>
 
     <kiln:block name="page-heading">
-      <kiln:super />IFEB
+
+      <kiln:super />
+      Yavuz Tatış collection
+
     </kiln:block>
 
     <kiln:block name="content">

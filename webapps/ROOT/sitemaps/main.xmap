@@ -98,6 +98,7 @@
 
       <map:match id="local-language-home-page" pattern="*/">
         <map:aggregate element="aggregation" label="content">
+          <map:part src="cocoon://internal/search/tei_metadata.xml?q=epidoc" />
           <map:part src="cocoon://_internal/menu/{1}/main.xml" />
         </map:aggregate>
         <map:transform src="cocoon://_internal/template/home.xsl">
@@ -108,6 +109,8 @@
         </map:transform>
         <map:serialize />
       </map:match>
+      
+
 
       <!-- Search. -->
       <map:match id="local-search" pattern="*/search/">
@@ -127,6 +130,50 @@
         </map:transform>
         <map:transform type="i18n">
           <map:parameter name="locale" value="{1}" />
+        </map:transform>
+        <map:serialize />
+      </map:match>
+      
+      <!-- about. -->
+      <map:match id="local-about" pattern="*/about.html">
+        <map:aggregate element="aggregation">
+          <map:part src="cocoon://_internal/menu/main.xml?url={1}/about.html" />
+        </map:aggregate>
+        <map:transform src="cocoon://_internal/template/about.xsl">
+          <map:parameter name="language" value="{1}" />
+        </map:transform>
+        <map:serialize />
+      </map:match>
+      
+      <!-- team. -->
+      <map:match id="local-team" pattern="*/team.html">
+        <map:aggregate element="aggregation">
+          <map:part src="cocoon://_internal/menu/main.xml?url={1}/team.html" />
+        </map:aggregate>
+        <map:transform src="cocoon://_internal/template/team.xsl">
+          <map:parameter name="language" value="{1}" />
+        </map:transform>
+        <map:serialize />
+      </map:match>
+      
+      <!-- collections. -->
+      <map:match id="local-collections" pattern="*/collections.html">
+        <map:aggregate element="aggregation">
+          <map:part src="cocoon://_internal/menu/main.xml?url={1}/collections.html" />
+        </map:aggregate>
+        <map:transform src="cocoon://_internal/template/collections.xsl">
+          <map:parameter name="language" value="{1}" />
+        </map:transform>
+        <map:serialize />
+      </map:match>
+      
+      <!-- Guidelines. -->
+      <map:match id="local-guidelines" pattern="*/guidelines.html">
+        <map:aggregate element="aggregation">
+          <map:part src="cocoon://_internal/menu/main.xml?url={1}/guidelines.html" />
+        </map:aggregate>
+        <map:transform src="cocoon://_internal/template/guidelines.xsl">
+          <map:parameter name="language" value="{1}" />
         </map:transform>
         <map:serialize />
       </map:match>

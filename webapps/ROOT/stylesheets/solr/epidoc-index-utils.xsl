@@ -67,6 +67,10 @@
           <xsl:text>0</xsl:text>
         </xsl:otherwise>
       </xsl:choose>
+      <xsl:text>#</xsl:text>
+      <xsl:value-of select="normalize-space(ancestor::tei:TEI//tei:rs[@type='collection-name'][@xml:lang='en'])"/>
+      <xsl:text>#</xsl:text>
+      <xsl:value-of select="ancestor::tei:TEI//tei:idno[@type='inv-nr-current']"/>
     </field>
   </xsl:template>
 

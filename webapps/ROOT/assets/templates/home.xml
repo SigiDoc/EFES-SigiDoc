@@ -36,7 +36,7 @@
 
     <kiln:block name="content-section">
       <main>
-        <div class="row">
+        <div class="row text-left">
           <div class="large-12 columns">
             <img class="landing-img" src="/assets/images/seal.png"/>
             <!-- <div class="landing-page-container">
@@ -44,33 +44,33 @@
             <img src="/assets/google-icons/download_24dp_562C2C_FILL0_wght400_GRAD0_opsz24.svg"/>
             <h3> About </h3>
             <p>Learn more about this portal</p>
-            </div>
-            <div class="landing-panel">
-            <img src="/assets/google-icons/download_24dp_562C2C_FILL0_wght400_GRAD0_opsz24.svg"/>
+            </a>
+            <a href="{kiln:url-for-match('local-search', ($language, ()), 0)}" target="_blank" class="landing-panel">
+            <img class="panel-icon" src="/assets/google-icons/database_search_24dp_45658B_FILL0_wght400_GRAD0_opsz24.svg"/>
             <h3> Search </h3>
             <p>Search the collections</p>
-            </div>
-            <div class="landing-panel">
-            <img src="/assets/google-icons/download_24dp_562C2C_FILL0_wght400_GRAD0_opsz24.svg"/>
+            </a>
+            <a href="{kiln:url-for-match('local-collections', ($language, ()), 0)}" target="_blank" class="landing-panel">
+            <img class="panel-icon" src="/assets/google-icons/apps_24dp_45658B_FILL0_wght400_GRAD0_opsz24.svg"/>
             <h3> Collections </h3>
             <p>See all collections</p>
-            </div>
-            <div class="landing-panel">
-            <img src="/assets/google-icons/download_24dp_562C2C_FILL0_wght400_GRAD0_opsz24.svg"/>
+            </a>
+            <a href="{kiln:url-for-match('local-guidelines', ($language, ()), 0)}" target="_blank" class="landing-panel">
+            <img class="panel-icon" src="/assets/google-icons/auto_stories_24dp_45658B_FILL0_wght400_GRAD0_opsz24.svg"/>
             <h3> Guidelines </h3>
-            <p>More informations on how to encode</p>
-            </div>
-            <div class="landing-panel">
-            <img src="/assets/google-icons/download_24dp_562C2C_FILL0_wght400_GRAD0_opsz24.svg"/>
+            <p>More information on how to search</p>
+            </a>
+            <a href="{kiln:url-for-match('local-team', ($language, ()), 0)}" target="_blank" class="landing-panel">
+            <img class="panel-icon" src="/assets/google-icons/groups_24dp_45658B_FILL0_wght400_GRAD0_opsz24.svg"/>
             <h3> Team </h3>
             <p>Get to know our team</p>
-            </div>
+            </a>
             <div class="landing-panel">
-            <img src="/assets/google-icons/download_24dp_562C2C_FILL0_wght400_GRAD0_opsz24.svg"/>
-            <h3> 2048 </h3>
+            <img class="panel-icon" src="/assets/google-icons/data_usage_24dp_45658B_FILL0_wght400_GRAD0_opsz24.svg"/>
+              <h3> <xsl:value-of select="count(//doc)"></xsl:value-of></h3>
             <p>Objects in all collections</p>
             </div>
-          </div> -->
+          </div> 
             <div class="panel radius">
 
               <!-- <div class="landing-img" id="site-title"></div> -->
@@ -154,7 +154,7 @@
                   byzantins de la collection Yavuz Tatış</i>, İzmir 2019, p. 6-7.</p>
             </div>
             <div class="row">
-              <div class="large-12 columns text-center">
+              <div class="large-12 columns">
                 <div class="panel radius">
                   <p>The full bibliographical description of this publication: <strong>[to be
                       changed by each project]</strong>, available at: <a href="https://tatis.sigidoc.huma-num.fr/" target="_blank">https://tatis.sigidoc.huma-num.fr/</a>.</p>
@@ -165,9 +165,9 @@
                   <p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
                       <img alt="Creative Commons License" style="border-width:0"
                         src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"/>
-                    </a> This work is licensed under a <a rel="license"
+                    </a> Authorship remains fully attributed to the original author(s). The content is shared under a <a rel="license"
                       href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC-BY-NC-SA
-                      License</a> (unless otherwise stated).</p>
+                      License</a>.</p>
                 </div>
               </div>
             </div>

@@ -45,6 +45,9 @@
         <!--<xsl:if test="$location_parts[5] = '1'">
           <xsl:text>[</xsl:text>
         </xsl:if>-->
+        <xsl:choose>
+          <xsl:when test="count($location_parts) &lt; 5">
+            
         <span class="index-instance-file">
           <xsl:value-of select="$location_parts[2]" />
         </span>
@@ -58,6 +61,11 @@
         <span class="index-instance-line">
           <xsl:value-of select="$location_parts[4]" />
         </span>
+          </xsl:when>
+          <xsl:otherwise>
+            <span><xsl:value-of select="$location_parts[7]"/></span>
+          </xsl:otherwise>
+        </xsl:choose>
         <!--<xsl:if test="$location_parts[5] = '1'">
           <xsl:text>]</xsl:text>
         </xsl:if>-->

@@ -3,7 +3,7 @@
 <root xmlns="http://www.kcl.ac.uk/artshums/depts/ddh/kiln/ns/1.0"
   xmlns:i18n="http://apache.org/cocoon/i18n/2.1">
   
-  <menu label="Seals" match="local-epidoc-index-display" i18n:key="menu-seals"/>
+  <!--<menu label="Seals" match="local-epidoc-index-display" i18n:key="menu-seals"/> -->
   
   <menu label="Indices" match="local-indices-type-display" params="epidoc" i18n:key="menu-indices">
     <!--Prosopography and geography-->
@@ -68,9 +68,9 @@
     <!--<item label="Byzantine Greek" language_switch="grc" i18n:key="grc"/>-->
     <item label="English" i18n:key="en" language_switch="en"/>
     <item label="French" i18n:key="fr" language_switch="fr"/>
-    <item label="Deutsch" i18n:key="de" language_switch="de"/>
-    <item label="Ελληνικά" i18n:key="el" language_switch="el"/>
-    <item label="Български" i18n:key="bg" language_switch="bg"/>
-    <item label="Italiano" i18n:key="it" language_switch="it"/>
+    <!--<item label="Deutsch" i18n:key="de" language_switch="de"/>-->
+    <!--<item label="Ελληνικά" i18n:key="el" language_switch="el"/>-->
+    <!--<item label="Български" i18n:key="bg" language_switch="bg"/>-->
+    <!--<item label="Italiano" i18n:key="it" language_switch="it"/>-->
   </menu>
 </root>

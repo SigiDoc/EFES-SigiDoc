@@ -180,7 +180,7 @@ ul.index-instances {
     grid-template-columns:  repeat(3, minmax(0, 1fr));
     grid-template-rows: repeat(2, minmax(0, 1fr));
     gap: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
 }
 
 .landing-panel {
@@ -196,8 +196,8 @@ ul.index-instances {
     background-color: #55555525;
 }
 
-.landing-panel img {
-    width: 24px;
+.panel-icon {
+    width: 30px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
@@ -206,6 +206,8 @@ ul.index-instances {
 .landing-panel p {
     margin-left: auto;
     margin-right: auto;
+    opacity: 0.75;
+    color: black;
 }
 
 nav.top-bar,
@@ -294,6 +296,10 @@ body {
     padding: 0 18px;
     background-color: #efefef;
     overflow: hidden;
+}
+
+.result-details span p {
+    text-align: left !important;
 }
 
 .hidden {

@@ -114,24 +114,24 @@
           <kiln:block name="footer">
             <footer>
               <p id="logos">
-                <a href="https://anr.fr/">
+                <a target="_blank" href="https://anr.fr/">
                   <img style="height:3.0em; padding-right:1em" alt="ANR"
                     src="{$kiln:assets-path}/images/anr.jpg"/>
                 </a>
-                <a href="https://www.dfg.de/">
+                <a target="_blank" href="https://www.dfg.de/">
                   <img style="height:3.5em; padding-right:0.7em; padding-left:0.5em" alt="DFG"
                     src="{$kiln:assets-path}/images/dfg.jpg"/>
                 </a>
-                <a href="https://cceh.uni-koeln.de/">
+                <a target="_blank" href="https://cceh.uni-koeln.de/">
                   <img style="height:3.5em; padding-right:1em; padding-left:0.5em"
                     alt="CCeH - Cologne Center for eHumanities"
                     src="{$kiln:assets-path}/images/cceh.png"/>
                 </a>
-                <a href="https://www.uni-koeln.de/">
+                <a target="_blank" href="https://www.uni-koeln.de/">
                   <img style="height:4.0em; padding-right:1.3em; padding-left:0.5em"
                     alt="Universität zu Köln" src="{$kiln:assets-path}/images/uzk.png"/>
                 </a>
-                <a href="https://www.orient-mediterranee.com/">
+                <a target="_blank" href="https://www.orient-mediterranee.com/">
                   <img style="height:3.5em; padding-right:1.3em; padding-left:0.5em" alt="Orient et Méditerranée UMR 8167 CNRS"
                     src="https://www.orient-mediterranee.com/wp-content/uploads/2023/02/logo-om_2.svg"/>
                 </a>
@@ -148,9 +148,13 @@
                 </span>
               </div>-->
               <p id="efes">Built on 
-                <a href="https://github.com/SigiDoc">SigiDoc</a> 
+                <a target="_blank" href="https://github.com/SigiDoc">SigiDoc</a> 
                   and delivered by
-                  <a href="https://github.com/EpiDoc/EFES">EFES</a>.
+                  <a target="_blank" href="https://github.com/EpiDoc/EFES">EFES</a>.
+                  The content is shared under a <a rel="license"
+                      href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC-BY-NC-SA
+                      License</a>.
+                  <a target="_blank" href="{kiln:url-for-match('local-about', ($language, ()), 0)}#Impressum">Legal notice and data privacy</a>
               </p>
             </footer>
           </kiln:block>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kiln:root xmlns:tei="http://www.tei-c.org/ns/1.0"
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:kiln="http://www.kcl.ac.uk/artshums/depts/ddh/kiln/ns/1.0"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+    
+    <kiln:parent>
+        <xi:include href="works.xml" />
+    </kiln:parent>
+    
+    <kiln:child>
+        <kiln:block name="title">
+            <kiln:super />
+            <xsl:apply-templates mode="title" select="/aggregation/index_metadata" />
+            <xsl:text>Guidelines</xsl:text>
+        </kiln:block>
+        
+        <kiln:block name="page-heading">
+            <kiln:super />
+            <xsl:apply-templates mode="head" select="/aggregation/index_metadata" />
+        </kiln:block>
+
+        <kiln:block name="page-header">
+            <div class="row">
+                <div class="large-12 columns text-center">
+                <h1>
+                    Search Guidelines
+                </h1>
+                </div>
+            </div>
+        </kiln:block>
+        
+        <kiln:block name="content">
+            <div class="row">
+                <p>This page provides guidance on how to search for seal data using the various filters available in the CSÆB Portal.</p>
+                <p>The search interface is designed to make data accessible, searchable, and sustainable.
+                 It allows users to combine different search criteria and access data from multiple online seal collections, all encoded according to the <a target="_blank" href="https://github.com/SigiDoc/Guidelines/wiki">SigiDoc data model</a>.
+                By applying and combining filters, users can, for instance, find specific seals, identify parallel specimens, or generate sigillographic statistics.</p>
+                <p>Feel free to explore the possibilities offered by the metaportal!</p>
+                <hr></hr> <!--TRENNLINIE-->
+                <h4>How to Search and Filter the Data</h4>
+                <p>The search interface consists primarily of the following filters, which can be freely combined:</p>
+                <ol type="a" style="font-size: 16px; margin-left: 50px;">
+                    <li>Free-text Search</li>
+                    <li>Timeline Filter</li>
+                    <li>Search Filters</li>
+                </ol>
+                <p>Clicking the "Reset search" button removes all applied filters.</p>
+                <!--FREE-TEXT SEARCH-->
+                <h6>a. Free-text Search</h6>
+                <p>In the upper-left corner, the "Search" box allows users to search for words, phrases, or characters—regardless of their position—within all XML files queried by the Portal.</p>
+                <p>Note that not all data encoded in the XML files are displayed on the webpage.
+                Therefore, some results may not appear to correspond to the text entered.
+                Additionally, because this search queries also plain text sections written without controlled vocabulary,
+                and since terms depend on editorial choices, consistency in word usage and results cannot be guaranteed.</p>
+                <p>Free-text search is best for basic queries or very specific terms not included in the filters. For more consistent results, using search filters is recommended.</p>
+                <p>Currently, free-text search supports only Latin characters, but the Portal provides virtual keyboards for entering Greek characters.</p>
+                <!--TIMELINE FILTER-->
+                <h6>b. Timeline Filter</h6>
+                <p>Below the free-text search box is a timeline with a movable slider that allows filtering by specific periods. The default time span is 400 to 1500, but this range can be adjusted.</p>
+                <p>The slider moves in 20-year increments, and results include a 20-year buffer to accommodate the broad or imprecise dating of many Byzantine seals.
+                 For example, a seal dated to the 11th century (1001–1100) will appear in the results for 981 to 1120.</p>
+                <p>The timeline filter can be combined with other filters. It resets by moving the sliders to both ends or clicking "Reset search".</p>
+                <!--SEARCH FILTERS-->
+                <h6>c. Search Filters</h6>
+                <p>Filters on the left side of the interface are the most reliable way to perform a scientific search.</p>
+                <p>Clicking a filter allows users to select a specific feature and narrow results by combining filters.
+                The Portal supports atomic searches, where data types are separated and listed in distinct filters.
+                For instance, the office "strategos of Cappadocia" must be searched using the filters "Military offices – strategos" and "Place names – Cappadocia".</p>
+                <p>As filters are applied, other filters automatically adjust to display only valid combinations, excluding irrelevant data.</p>
+                <p>Note: Filters reflect only the written evidence on the seals. The Portal is not a prosopographical database.
+                Information inferred from historical context, iconography, or interpretation is not included.
+                For example, if a historical figure is known as a "patrikios" but the title is not inscribed on their seal,
+                the Portal will not return results under that title.</p>
+                <p>The Portal supports the following filters:</p>
+                <ol type="i" style="font-size: 16px; margin-left: 50px;">
+                    <li>Object Type</li>
+                    <li>Material</li>
+                    <li>Language</li>
+                    <li>Personal Names</li>
+                    <li>Family Names</li>
+                    <li>Gender</li>
+                    <li>Milieu</li>
+                    <li>Place Names</li>
+                    <li>Dignities</li>
+                    <li>Civil Offices</li>
+                    <li>Ecclesiastical Offices</li>
+                    <li>Military Offices</li>
+                    <li>Institutions</li>
+                    <li>Metrical Legends</li>
+                    <li>Type of Monogram</li>
+                    <li>Collection</li>
+                </ol>
+                <!--Object type, Material, Language-->
+                <h6>c.i–iii. Object Type, Material, and Language</h6>
+                <p>These filters refer respectively to the object itself, the material it is made of, and the language of the legend.
+                Since typically the data concerns seals impressions, lead and Greek respectively, these filters become more useful when searching for other objects
+                (e.g., markers, signet rings, boulloteria), materials (e.g., gold, silver), or languages (e.g., Latin, Arabic).</p>
+                <!--Personal and Family Names-->
+                <h6>c.iv–v. Personal and Family Names</h6>
+                <p>The "Personal names" and "Family names" filters support onomastic queries, such as finding all seals belonging to someone named "Theodosios" or members of the "Komnenos" family.</p>
+                <p>Since the Portal is not a prosopographical resource, it cannot search for specific individuals.
+                To search for someone like "Nikephoros Komnenos", combine the filters "Personal names – Nikephoros" and "Family names – Komnenos."
+                Determining whether matching seals belong to the same individual or homonyms is left to the user.
+                Likewise, all persons with a single name like "Theodoros" are grouped together.</p>
+                <!--Gender-->
+                <h6>c.vi. Gender</h6>
+                <p>This filter refers to the gender of the issuer, with options: eunuch, female, male, and undetermined. No gender is recorded for institutional issuers (e.g., monasteries).</p>
+                <!--Milieu-->
+                <h6>c.vii. Milieu</h6>
+                <p>This filter categorises the seal issuer's milieu, based on known offices or dignities—or the absence of such data.
+                For example, filtering by "ecclesiastical milieu" returns seals from patriarchs, monks, priests, etc.</p>
+                <!--Place Names-->
+                <h6>c.viii. Place Names</h6>
+                <p>This filter includes all places mentioned on seals, such as cities (in various functions), themes, etc. It excludes institutions or organisations, which have a separate filter (see c.xiii).</p>
+                <!--Dignities-->
+                <h6>c.ix. Dignities</h6>
+                <p>This filter refers to the dignities held by seal issuers. For instance, users can search for all seals with the title "sebastos".</p>
+                <!--Civil Offices-->
+                <h6>c.x. Civil Offices</h6>
+                <p>This filter includes civil offices inscribed on seals. For example, to find seals from someone holding the office of "notarios," select that term.</p>
+                <p>Because of atomic search, the various elements that can designate an office are split and different filters should be combined. To find a "judge of the Hippodrome," combine "Civil offices – judge" with "Institutions – Hippodrome".</p>
+                <!--Ecc Offices-->
+                <h6>c.xi. Ecclesiastical Offices</h6>
+                <p>This filter includes ecclesiastical offices found on seals. For example, search for seals with the office "archbishop".</p>
+                <p>Because of atomic search, the various elements that can designate an office are split and different filters should be combined.
+                 To find an "archbishop of Thessalonica," use "Ecclesiastical offices – archbishop" and "Place names – Thessalonica."</p>
+                <!--Military Offices-->
+                <h6>c.xii. Military Offices</h6>
+                <p>This filter includes military offices inscribed on seals. For example, search for "strategos".</p>
+                <p>Because of atomic search, the various elements that can designate an office are split and different filters should be combined.
+                 To find a "strategos of the Opsikion," combine "Military offices – strategos" with "Place names – Opsikion".</p>
+                <!--Institutions-->
+                <h6>c.xiii. Institutions</h6>
+                <p>This filter includes institutions or organisations mentioned by the seals legends (e.g., tribunals, bureaus, monasteries, churches). It is separate from the "Place names" filter (1.c.viii).</p>
+                <!--Metrical Legends-->
+                <h6>c.xiv. Metrical Legends</h6>
+                <p>This filter identifies seals with metrical legends. The filter provides a simple YES/NO option, allowing both positive and negative searches.</p>
+                <!--Type of Monogram-->
+                <h6>c.xv. Type of Monogram</h6>
+                <p>This filter identifies types of monograms on seals. For example, search for seals with a cruciform monogram.</p>
+                <!--Collections-->
+                <h6>c.xvi. Collection</h6>
+                <p>This filter allows users to limit searches to specific collections which the seals belong to.</p>
+                <hr></hr> <!--TRENNSTRICH-->
+                <h4>Search Results - A Note of Caution</h4>
+                <p>This Portal aggregates metadata from several independent collections. Its purpose is to provide quality data suitable for further research in (digital) sigillography.
+                The Cologne and Paris collections published in the framework of the ANR-DFG DigiByzSeal project serve as examples of best practice in describing seals according to the SigiDoc data model.
+                 However, the Portal does not act as a gatekeeper. Participation is open, and the responsibility for editorial quality and consistency remains with each contributing collection.
+                </p>
+                <p>Anyone interested in adding new data is encouraged to contact the DigiByzSeal team.
+                We will do our best to support contributors in producing high-quality, SigiDoc-compliant records.
+                Still, search results may reflect varying levels of detail and may omit certain categories, depending on the collection
+                and on the editorial choices operated by the person(s) in charge.</p> <!--[EMAIL OR WEBSITE TO BE ADDED]-->
+                <p>For more information, please consult the individual collection descriptions.</p>
+            </div>
+        </kiln:block>
+    </kiln:child>
+    
+</kiln:root>

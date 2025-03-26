@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kiln:root xmlns:tei="http://www.tei-c.org/ns/1.0"
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:kiln="http://www.kcl.ac.uk/artshums/depts/ddh/kiln/ns/1.0"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+    
+    <kiln:parent>
+        <xi:include href="works.xml" />
+    </kiln:parent>
+    
+    <kiln:child>
+        <kiln:block name="title">
+            <kiln:super />
+            <xsl:apply-templates mode="title" select="/aggregation/index_metadata" />
+            <xsl:text>About</xsl:text>
+        </kiln:block>
+        
+        <kiln:block name="page-heading">
+            <kiln:super />
+            <xsl:apply-templates mode="head" select="/aggregation/index_metadata" />
+        </kiln:block>
+
+        <kiln:block name="page-header">
+            <div class="row">
+                <div class="large-12 columns text-center">
+                <h1>
+                    About
+                </h1>
+                </div>
+            </div>
+        </kiln:block>
+        
+        <kiln:block name="content">
+            <div class="row">
+                <!--ABOUT INTRO-->
+                <p>
+                The CSÆB is a federated search Portal for Byzantine seals, providing access to all collections encoded using the <a target="_blank" href="https://github.com/SigiDoc/Guidelines/wiki">SigiDoc data model</a> through a single unified interface.
+                 Rather than merging everything into one large corpus, the Portal allows individual collections to remain autonomous while being interoperable through the shared encoding standard.
+                To support this approach, the <i>DigiByzSeal</i> team developed an infrastructure based on GitHub repositories:
+                </p>
+                <ul style="font-size: 16px; margin-left: 50px;">
+                    <li>A central SigiDoc repository hosts core materials such as schema, templates, and stylesheets. These files are centrally maintained and are not intended to be modified by individual projects.</li>
+                    <li>Forkable components, including selected code files and authority lists (standardised names and references), are made available for local adaptation. Projects can propose improvements via pull requests to the central repository.</li>
+                    <li>Individual teams (e.g., those in Cologne and Paris) have established their own GitHub organisations, where they manage their EFES-SigiDoc instances and collections of seal editions (in XML format).</li>
+                </ul>
+                <p>
+                Each seal collection is published as XML files, which are integrated into <a target="_blank" href="https://github.com/SigiDoc/EFES-SigiDoc">EFES</a>—a platform for individual SigiDoc XML-based projects.
+                 The federated Portal tracks public Git repositories using webhooks. When a new seal is added, the webhook initiates a process that:
+                </p>
+                <ul style="font-size: 16px; margin-left: 50px;">
+                    <li>Pulls the new XML file from the repository</li>
+                    <li>Indexes the file on the EFES-based Portal</li>
+                    <li>Makes it available in the search interface</li>
+                </ul>
+                <p>
+                This system supports decentralised editing while enabling centralised discovery and search capabilities.
+                Importantly, the federated Portal does not require projects to use EFES specifically. Even raw XML files hosted publicly on Git platforms can be harvested and indexed.
+                The broader aim is to build a collaborative digital infrastructure for sigillography, empowering museums, researchers, and institutions around the world to contribute independently while remaining interconnected.
+                </p>
+                <hr></hr> <!--TRENNSTRICH-->
+                <!--WHO IS IT FOR?-->
+                <h4>Who is CSÆB for?</h4>
+                <p>
+                Are you a researcher working on the publication of Byzantine seals?
+                A private collector in possession of valuable and unique pieces that remain largely unknown to the scholarly community?
+                An institution that already maintains a catalogue of seals, but wants to make them more visible?
+                </p>
+                <p>Then CSÆB is likely for you.</p>
+                <hr></hr> <!--TRENNSTRICH-->
+                <!--WHAT ARE THE BENEFITS-->
+                <h4>What are the benefits of participating?</h4>
+                <p>
+                Your seals and your scholarly work will become more visible and findable, reaching a wider academic audience.
+                </p>
+                <p>
+                This increased accessibility does not come at the cost of your rights. Your authorship and contributions—whether personal or institutional—will always remain clearly credited and protected.
+                </p>
+                <p>
+                By joining CSÆB, you contribute to a critical mass of searchable seals, enabling multicorpus-based research that can enhance your own work and that of others.
+                </p>
+                <hr></hr> <!--TRENNSTRICH-->
+                <!--HOT TO PARTICIPATE-->
+                <h4>How can you participate?</h4>
+                <p>
+                The minimum requirement is to be keen to prepare your sigillographic editions in accordance with the <a target="_blank" href="https://github.com/SigiDoc/Guidelines/wiki">SigiDoc data model</a>: the adoption of the latter will create the common underlying foundation necessary
+                 for sigillographic data to be simultaneously queried by the Portal. To do that, you have several options:
+                </p>
+                <ul style="font-size: 16px; margin-left: 50px;">
+                    <li>Host your own collection using an instance such as <a target="_blank" href="https://github.com/SigiDoc/EFES-SigiDoc">EFES</a>, which can be accessed in parallel via the Portal.</li>
+                    <li>Manage your collection's metadata in a <a target="_blank" href="https://github.com/sceaux-byzantins-paris/zacos-collection">Git repository</a>, which the Portal will retrieve and index.</li>
+                    <li>Use a web-based input form to describe individual seals according to the SigiDoc data model, making them searchable through the Portal. </li> <!--LINK TO EDITOR?-->
+                </ul>
+                <hr></hr> <!--TRENNSTRICH-->
+                <!--WHAT THE PORTAL IS NOT-->
+                <h4>What the Portal is NOT</h4>
+                <p>The Portal does <i>not</i> replace independent presentations or institutional publications. Rather, it enhances the visibility of your collections through an additional platform.</p>
+                <p>The Portal is <i>not</i> a single curated collection. It is a community-driven initiative. Please note that datasets contributed by different partners may vary in depth and descriptive detail.</p>
+                <hr></hr> <!--TRENNSTRICH-->
+                <!--IMPRESSUM-->
+                <h4 id="Impressum">Legal Notice</h4>
+                <p>In general, the <a target="_blank" href="https://portal.uni-koeln.de/impressum">legal notice of the University of Cologne</a> applies.</p>
+                <hr></hr> <!--TRENNSTRICH-->
+                <h4>Data privacy</h4>
+                <p>The <a target="_blank" href="https://portal.uni-koeln.de/datenschutz">data privacy of the Universityof Cologne </a>applies.</p>
+                <h6>Usage statistics</h6>
+                <p>
+                This website uses Matomo (formerly Piwik), a software for the statistical analysis of visitor access. Matomo uses cookies to enable your use of the website to be analyzed.
+                The information generated by the cookie about your use of our website is stored on the server of the University of Cologne in Germany.
+                Your IP address is anonymized immediately after processing and before it is stored. On our website, we offer you the option of <a target="_blank" href="#">opting out</a> of the analysis process.
+                In this way, another cookie is set on your system, which signals our system not to save your data. If you delete the corresponding cookie from your own system in the meantime, the opt-out cookie must be set again.
+                Alternatively, we recommend that you activate the <a target="_blank" href="https://de.wikipedia.org/wiki/Do_Not_Track_(Software)">Do Not Track settings</a> in your browser.
+                </p>
+                <p>
+                You can find more information on the privacy settings of the Matomo software at the following link: <a target="_blank" href="https://matomo.org/docs/privacy/">https://matomo.org/docs/privacy/</a>.
+                </p>
+                <hr></hr> <!--TRENNSTRICH-->
+                <!--FURTHER READING-->
+                <h6>Further readings:</h6>
+                <p>
+                Neuefeind, Claes, Bigalke, Jan, Catalano, Maria Teresa, Drach, Sviatoslav, Efthymoglou, Sofia, Evening, Pia, Filosa, Martina, Malatras, Christos, Schaeben, Marcel,
+                 and Sode, Claudia. "Signed, sealed, delivered – digital approaches to Byzantine sigillography." it - Information Technology, 2024. <a target="_blank" href="https://doi.org/10.1515/itit-2023-0030">https://doi.org/10.1515/itit-2023-0030</a>
+                </p>
+                <p>
+                Sopracasa, Alessio, Bigalke, Jan, Buchs, Numa, and Meziridou, Sima. 2024. “Creating a Sigillographic Search Engine for Byzantium: Preliminary Results.” 
+                In Digital Approaches to Medieval Sigillography, ed. Martina Filosa, Claes Neuefeind, and Claudia Sode, special collection. Digital Medievalist 17(1): 1–32. <a target="_blank" href="https://doi.org/10.16995/dm.15235">https://doi.org/10.16995/dm.15235</a>
+                </p>
+            </div>
+        </kiln:block>
+    </kiln:child>
+    
+</kiln:root>

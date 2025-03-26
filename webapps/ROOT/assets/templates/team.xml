@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kiln:root xmlns:tei="http://www.tei-c.org/ns/1.0"
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:kiln="http://www.kcl.ac.uk/artshums/depts/ddh/kiln/ns/1.0"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+    
+    <kiln:parent>
+        <xi:include href="works.xml" />
+    </kiln:parent>
+    
+    <kiln:child>
+        <kiln:block name="title">
+            <kiln:super />
+            <xsl:apply-templates mode="title" select="/aggregation/index_metadata" />
+            <xsl:text>Team</xsl:text>
+        </kiln:block>
+        
+        <kiln:block name="page-heading">
+            <kiln:super />
+            <xsl:apply-templates mode="head" select="/aggregation/index_metadata" />
+        </kiln:block>
+        
+    <kiln:block name="page-header">
+        <div class="row">
+            <div class="large-12 columns text-center">
+            <h1>
+                Team
+            </h1>
+            </div>
+        </div>
+    </kiln:block>
+
+        <kiln:block name="content">
+            <div class="row">
+                <p>The Portal of the <i>Corpus Sigillorum Ævi Byzantini</i> has been realised in the framework of the ANR-DFG project 
+                <i>Unlocking the Hidden Value of Seals: New Methodologies for Historical Research in Byzantine Studies</i> 
+                (<a target="_blank" href="https://ifa.phil-fak.uni-koeln.de/forschung/byzantinistik-und-neugriechische-philologie-forschung/drittmittel-projekte/digibyzseal">DigiByzSeal</a>, 2022-2025), 
+                with the active cooperation of all team members listed below:</p>
+                <!--Principal investigators-->
+                <h6>Principal Investigators</h6>
+                <ul style="font-size: 16px; margin-left: 50px;">
+                    <li><a target="_blank" href="https://cceh.uni-koeln.de/personen/claes-neuefeind/">Claes Neuefeind</a> (Cologne Center for eHumanities, Universität zu Köln)</li>
+                    <li><a target="_blank" href="https://ifa.phil-fak.uni-koeln.de/en/mitarbeiterinnen/nach-abteilungen-einrichtungen/byzantinistik-und-neugriechische-philologie/sode">Claudia Sode</a> (Institut für Altertumskunde, Abteilung Byzantinistik und Neugriechische Philologie, Universität zu Köln)</li>
+                    <li><a target="_blank" href="https://www.orient-mediterranee.com/member/sopracasa-alessio/">Alessio Sopracasa</a> (Sorbonne Université – CNRS UMR 8167)</li>
+                </ul>
+                <!--French Team-->
+                <h6>French Team</h6>
+                <ul style="font-size: 16px; margin-left: 50px;">
+                    <li><a target="_blank" href="https://www.orient-mediterranee.com/member/buchs-numa/">Numa Buchs</a> (Sorbonne Université)</li>
+                    <li><a target="_blank" href="https://www.orient-mediterranee.com/member/cheynet-jean/">Jean-Claude Cheynet</a> (Sorbonne Université – CNRS UMR 8167)</li>
+                    <li><a target="_blank" href="https://www.orient-mediterranee.com/member/meziridou-sima/">Sima Meziridou</a></li>
+                    <li><a target="_blank" href="https://www.orient-mediterranee.com/member/prigent-vivien/">Vivien Prigent</a> (École française de Rome – CNRS UMR 8167)</li>
+                </ul>
+                <!--German Team-->
+                <h6>German Team</h6>
+                <ul style="font-size: 16px; margin-left: 50px;">
+                    <li>Institut für Altertumskunde, Abteilung Byzantinistik und Neugriechische Philologie, Universität zu Köln</li>
+                        <ul style="font-size: 16px; margin-left: 50px;">
+                            <li><a target="_blank" href="https://ifa.phil-fak.uni-koeln.de/mitarbeiterinnen/nach-abteilungen-einrichtungen/byzantinistik-und-neugriechische-philologie/catalano">Maria Teresa Catalano</a></li>
+                            <li><a target="_blank" href="https://ifa.phil-fak.uni-koeln.de/mitarbeiterinnen/nach-abteilungen-einrichtungen/byzantinistik-und-neugriechische-philologie/efthymoglou">Sofia Efthymoglou</a></li>
+                            <li><a target="_blank" href="https://ifa.phil-fak.uni-koeln.de/mitarbeiterinnen/nach-abteilungen-einrichtungen/byzantinistik-und-neugriechische-philologie/evening">Pia Tabea Charlene Evening</a></li>
+                            <li><a target="_blank" href="https://ifa.phil-fak.uni-koeln.de/mitarbeiterinnen/nach-abteilungen-einrichtungen/byzantinistik-und-neugriechische-philologie/filosa">Martina Filosa</a></li>
+                        </ul>
+                    <li>Cologne Center for eHumanities, Universität zu Köln</li>
+                        <ul style="font-size: 16px; margin-left: 50px;">
+                            <li><a target="_blank" href="https://cceh.uni-koeln.de/personen/jan-bigalke/">Jan Bigalke</a></li>
+                            <li><a target="_blank" href="https://cceh.uni-koeln.de/personen/jonathan-blumtritt/">Jonathan Blumtritt</a></li>
+                            <li><a target="_blank" href="https://cceh.uni-koeln.de/personen/sviatoslav-drach/">Sviatoslav Drach</a></li>
+                            <li><a target="_blank" href="https://cceh.uni-koeln.de/personen/benedikte-loebbert/">Benedikte Löbbert</a></li>
+                            <li><a target="_blank" href="https://cceh.uni-koeln.de/personen/marcel-schaeben/">Marcel Schaeben</a></li>
+                        </ul>
+                </ul>
+            </div>
+        </kiln:block>
+    </kiln:child>
+    
+</kiln:root>

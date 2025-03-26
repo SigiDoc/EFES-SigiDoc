@@ -376,6 +376,25 @@ dl.iospe dd,
     font-family: var(--base-font);
 }
 
+.rti {
+    margin-bottom: 16px;
+}
+
+.rti-switch {
+    font-size: var(--fs-base);
+    font-weight: bold;
+    background-color: #637893;
+    color: white !important;
+    padding: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 5px;
+}
+
+.rti-switch:hover {
+    background-color: #45658b;
+}
+
 .hide-switch{
     /* margin-top: 2em; */
     font-size: var(--fs-base);

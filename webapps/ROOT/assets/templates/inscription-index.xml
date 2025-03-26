@@ -23,8 +23,10 @@
     </kiln:block>
 
     <kiln:block name="page-heading">
+
       <kiln:super />
       Yavuz Tatış collection
+
     </kiln:block>
 
     <kiln:block name="content">
@@ -35,7 +37,7 @@
         <img id="logo-download" src="/assets/google-icons/download_24dp_562C2C_FILL0_wght400_GRAD0_opsz24.svg" />
         <p id="exportp">
           <i18n:text i18n:key="export-as">Export as a </i18n:text>
-          <a href="{kiln:url-for-match('local-epidoc-zip', ($language), 0)}">
+          <a target="_blank" href="{kiln:url-for-match('local-epidoc-zip', ($language), 0)}">
            <i18n:text i18n:key="zip">ZIP archive</i18n:text>
           </a>
         </p>

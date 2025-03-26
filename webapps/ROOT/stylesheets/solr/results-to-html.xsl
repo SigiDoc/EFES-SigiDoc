@@ -138,7 +138,9 @@
             <xsl:value-of select="current-grouping-key()"/>
           </div>
 
-          <xsl:apply-templates select="current-group()[self::doc]" mode="detailed-results"/>
+          <xsl:apply-templates select="current-group()[self::doc]" mode="detailed-results">
+            <xsl:with-param name="collection" select="current-grouping-key()"/>
+          </xsl:apply-templates>
         </xsl:for-each-group>
 
         <xsl:call-template name="add-results-pagination"/>
@@ -147,7 +149,7 @@
   </xsl:template>
 
   <xsl:template match="doc" mode="detailed-results">
-
+    <xsl:param name="collection"/>
     <xsl:variable name="short-filepath" select="substring-after(str[@name = 'file_path'], '/')"/>
     <div class="result">
       <div class="result-headline">
@@ -163,15 +165,22 @@
         </p>
         <xsl:variable name="link">
           <xsl:choose>
-            <xsl:when test="current-grouping-key() = 'IFEB'">
+            <xsl:when test="$collection = 'IFEB'">
               <xsl:value-of select="concat('https://ifeb.sigidoc.huma-num.fr','/fr/seals/', $short-filepath,'.html')"/>
             </xsl:when>
             
-            <xsl:when test="normalize-space(current-grouping-key()) = 'Yavuz Tatış collection.'">
+            <xsl:when test="normalize-space($collection) = 'Yavuz Tatış collection.' or normalize-space($collection) = 'Yavuz Tatış collection'">
               <xsl:value-of select="concat('https://tatis.sigidoc.huma-num.fr','/fr/seals/', $short-filepath,'.html')"/>
             </xsl:when>
-            <xsl:when test="current-grouping-key() = ''">
-              <xsl:value-of select="concat('https://ifeb.sigidoc.huma-num.fr','/fr/seals/', $short-filepath,'.html')"/>
+            <xsl:when test="normalize-space($collection) = 'Seyrig'">
+              <xsl:value-of select="concat('https://seyrig.sigidoc.huma-num.fr','/fr/seals/', $short-filepath,'.html')"/>
+            </xsl:when>
+            
+            <xsl:when test="normalize-space($collection) = 'Henri Seyrig Collection'">
+              <xsl:value-of select="concat('https://seyrig.sigidoc.huma-num.fr','/fr/seals/', $short-filepath,'.html')"/>
+            </xsl:when>
+            <xsl:when test="$collection = 'Robert Feind Collection'">
+              <xsl:value-of select="concat('https://feind.sigidoc.cceh.uni-koeln.de','/de/seals/', $short-filepath,'.html')"/>
             </xsl:when>
             <xsl:otherwise>
               <xsl:value-of select="kiln:url-for-match('local-epidoc-display-html', ($language, $short-filepath), 0)"/>
